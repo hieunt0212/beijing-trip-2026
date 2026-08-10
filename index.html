@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Bắc Kinh – Gubei – Universal 2026 (Final Expense & Travel Report v15 + Visa Fee 2.3M)</title>
+<title>Bắc Kinh – Gubei – Universal 2026 (Final Expense & Travel Report v16 + WeChat)</title>
 <style>
 :root{--ink:#172033;--muted:#667085;--line:#d8dee9;--bg:#eef2f6;--paper:#fff;--red:#b42318;--redbg:#fff1f0;--amber:#9a6700;--amberbg:#fff8e1;--green:#067647;--greenbg:#ecfdf3;--blue:#175cd3;--bluebg:#eff8ff;--orange:#c2410c;--shadow:0 12px 35px rgba(20,35,60,.12)}
 *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
@@ -460,7 +460,7 @@ body.scrolled #floatingToTop{display:block}
 .time-note{display:inline-block;padding:2px 7px;border-radius:999px;background:#fff8e1;color:#9a6700;font-size:12px;font-weight:800;margin-left:6px}
 
 
-/* v15 expense dashboard + travel report + corrected visa fee */
+/* v16 expense dashboard + travel report + corrected visa fee + WeChat spending */
 .expense-dashboard{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:14px 0 18px}
 .expense-metric{border:1px solid var(--line);border-radius:16px;background:#fff;padding:15px;box-shadow:0 7px 20px rgba(20,35,60,.06)}
 .expense-metric span{display:block;color:var(--muted);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
@@ -490,10 +490,10 @@ body.dark th{background:#1f2937}body.dark td{background:#0f172a}body.dark tr.tot
 <h1>Bắc Kinh - Gubei - Universal Beijing 2026</h1>
 <p>17/07/2026 tối - 23/07/2026 sáng | 11 người | Dữ liệu vé máy bay, khách sạn, thanh toán và hành lý đã được đối chiếu theo hóa đơn/voucher.</p>
 <div class="stats">
-<div class="stat"><span>Tổng chi quy đổi</span><b>218.927.275đ</b></div>
-<div class="stat"><span>Bình quân 11 người</span><b>19.902.480đ/người</b></div>
+<div class="stat"><span>Tổng chi quy đổi</span><b>229.727.275đ</b></div>
+<div class="stat"><span>Bình quân 11 người</span><b>20.884.298đ/người</b></div>
 <div class="stat"><span>Universal đã dùng</span><b>27.100.840đ</b></div>
-<div class="stat"><span>Visa + Alipay</span><b>57.700.000đ</b></div>
+<div class="stat"><span>Visa + ví điện tử</span><b>68.500.000đ</b></div>
 </div>
 </header>
 <main>
@@ -564,13 +564,14 @@ body.dark th{background:#1f2937}body.dark td{background:#0f172a}body.dark tr.tot
 </section>
 <section id="payments">
 <h2>2. Thanh toán thực tế đã xác nhận</h2>
-<div class="alert green"><b>Cập nhật final:</b> đã bổ sung 2 booking Universal Beijing, phí visa 2.300.000đ/người và khoản chi tiêu ngoài qua Alipay khoảng 9.000 CNY. Toàn bộ số tiền trong tab này đã được quy đổi về VND để dễ tổng kết.</div>
+<div class="alert green"><b>Cập nhật final:</b> đã bổ sung 2 booking Universal Beijing, phí visa 2.300.000đ/người, khoản chi tiêu ngoài qua Alipay khoảng 9.000 CNY và WeChat 3.000 CNY. Toàn bộ số tiền trong tab này đã được quy đổi về VND để dễ tổng kết.</div>
 <div class="expense-dashboard">
-  <div class="expense-metric"><span>Tổng chi sau quy đổi</span><b>218.927.275đ</b><div class="note">Booking + Universal + visa + Alipay</div></div>
-  <div class="expense-metric"><span>Bình quân 11 người</span><b>19.902.480đ</b><div class="note">Tính đều toàn đoàn</div></div>
+  <div class="expense-metric"><span>Tổng chi sau quy đổi</span><b>229.727.275đ</b><div class="note">Booking + Universal + visa + Alipay + WeChat</div></div>
+  <div class="expense-metric"><span>Bình quân 11 người</span><b>20.884.298đ</b><div class="note">Tính đều toàn đoàn</div></div>
   <div class="expense-metric"><span>Universal Beijing</span><b>27.100.840đ</b><div class="note">1.042,34 USD x 26,000đ</div></div>
   <div class="expense-metric"><span>Phí visa</span><b>25.300.000đ</b><div class="note">11 người x 2.300.000đ</div></div>
-  <div class="expense-metric"><span>Chi tiêu Alipay</span><b>32.400.000đ</b><div class="note">9.000 CNY x 3,600đ</div></div>
+  <div class="expense-metric"><span>Chi tiêu Alipay</span><b>32.400.000đ</b><div class="note">9.000 CNY x 3.600đ</div></div>
+  <div class="expense-metric"><span>Chi tiêu WeChat</span><b>10.800.000đ</b><div class="note">3.000 CNY x 3.600đ</div></div>
 </div>
 <div class="expense-tools"><button onclick="exportExpensesExcel()">Xuất Excel chi phí (.xls)</button></div>
 <table id="expenseTable">
@@ -591,16 +592,18 @@ body.dark th{background:#1f2937}body.dark td{background:#0f172a}body.dark tr.tot
 <tr><td>🛂 Visa</td><td>Phí visa Trung Quốc</td><td>Tổng hợp thực tế</td><td>11 người x 2.300.000đ/người.</td><td class="money">2.300.000đ x 11</td><td class="money"><b>25.300.000đ</b></td><td>✅ Đã thanh toán</td></tr>
 <tr class="total"><td colspan="5">Tổng phí visa</td><td class="money">25.300.000đ</td><td></td></tr>
 <tr><td>🍜 Ăn uống & shopping</td><td>Chi tiêu ngoài qua Alipay</td><td>Tổng hợp thực tế</td><td>Ăn uống, mua sắm, taxi/metro và các chi tiêu nhỏ trong chuyến đi; số người phụ trách cung cấp khoảng 9.000 CNY.</td><td class="money">9.000 CNY</td><td class="money"><b>32.400.000đ</b></td><td>✅ Đã chi</td></tr>
-<tr class="total"><td colspan="5">Tổng tất cả chi phí sau quy đổi VND</td><td class="money">218.927.275đ</td><td></td></tr>
-<tr><td colspan="5">Bình quân 11 người</td><td class="money"><b>19.902.480đ/người</b></td><td></td></tr>
+<tr><td>🍜 Ăn uống & shopping</td><td>Chi tiêu ngoài qua WeChat</td><td>Tổng hợp thực tế</td><td>Khoản chi tiêu qua WeChat Pay bổ sung sau quyết toán; quy đổi cùng tỷ giá 3.600đ/CNY.</td><td class="money">3.000 CNY</td><td class="money"><b>10.800.000đ</b></td><td>✅ Đã chi</td></tr>
+<tr class="total"><td colspan="5">Tổng ăn uống & shopping / ví điện tử</td><td class="money">43.200.000đ</td><td></td></tr>
+<tr class="total"><td colspan="5">Tổng tất cả chi phí sau quy đổi VND</td><td class="money">229.727.275đ</td><td></td></tr>
+<tr><td colspan="5">Bình quân 11 người</td><td class="money"><b>20.884.298đ/người</b></td><td></td></tr>
 </tbody></table>
 <div class="expense-breakdown">
-  <div class="expense-chip"><span>Vé máy bay</span><b>86.578.794đ</b><span>39,5%</span><div class="expense-bar"><i style="width:39.5%"></i></div></div>
-  <div class="expense-chip"><span>Khách sạn</span><b>41.908.475đ</b><span>19,1%</span><div class="expense-bar"><i style="width:19.1%"></i></div></div>
-  <div class="expense-chip"><span>Di chuyển</span><b>1.918.778đ</b><span>0,9%</span><div class="expense-bar"><i style="width:0.9%"></i></div></div>
-  <div class="expense-chip"><span>Vé tham quan</span><b>30.821.228đ</b><span>14,1%</span><div class="expense-bar"><i style="width:14.1%"></i></div></div>
-  <div class="expense-chip"><span>Visa</span><b>25.300.000đ</b><span>11,6%</span><div class="expense-bar"><i style="width:11.6%"></i></div></div>
-  <div class="expense-chip"><span>Ăn uống & shopping</span><b>32.400.000đ</b><span>14,8%</span><div class="expense-bar"><i style="width:14.8%"></i></div></div>
+  <div class="expense-chip"><span>Vé máy bay</span><b>86.578.794đ</b><span>37,7%</span><div class="expense-bar"><i style="width:37.7%"></i></div></div>
+  <div class="expense-chip"><span>Khách sạn</span><b>41.908.475đ</b><span>18,2%</span><div class="expense-bar"><i style="width:18.2%"></i></div></div>
+  <div class="expense-chip"><span>Di chuyển</span><b>1.918.778đ</b><span>0,8%</span><div class="expense-bar"><i style="width:0.8%"></i></div></div>
+  <div class="expense-chip"><span>Vé tham quan</span><b>30.821.228đ</b><span>13,4%</span><div class="expense-bar"><i style="width:13.4%"></i></div></div>
+  <div class="expense-chip"><span>Visa</span><b>25.300.000đ</b><span>11,0%</span><div class="expense-bar"><i style="width:11.0%"></i></div></div>
+  <div class="expense-chip"><span>Ăn uống & shopping</span><b>43.200.000đ</b><span>18,8%</span><div class="expense-bar"><i style="width:18.8%"></i></div></div>
 </div>
 <p class="small"><b>Tỷ giá dùng để tổng kết:</b> 1 USD = 26.000đ; 1 CNY = 3.600đ. Đây là quy đổi tham chiếu để quyết toán nội bộ, không thay thế sao kê ngân hàng thực tế. Bản public vẫn che mã booking và dữ liệu nhạy cảm.</p>
 </section>
@@ -2185,8 +2188,8 @@ body.dark th{background:#1f2937}body.dark td{background:#0f172a}body.dark tr.tot
   <h3>🇨🇳 Beijing Trip 2026 — Final Report</h3>
   <p><b>17/07/2026 tối → 23/07/2026 sáng</b> · 11 travellers · Hà Nội ⇄ Beijing Daxing · Qianmen, Gubei Water Town, POP LAND/SOLANA và Universal Beijing.</p>
   <div class="report-stats">
-    <div><span>Tổng chi quy đổi</span><b>218.927.275đ</b></div>
-    <div><span>Bình quân</span><b>19.902.480đ/người</b></div>
+    <div><span>Tổng chi quy đổi</span><b>229.727.275đ</b></div>
+    <div><span>Bình quân</span><b>20.884.298đ/người</b></div>
     <div><span>Khách sạn</span><b>THE YARD + Junyue Inn</b></div>
     <div><span>Điểm nhấn</span><b>Universal + Gubei</b></div>
   </div>
@@ -2198,7 +2201,7 @@ body.dark th{background:#1f2937}body.dark td{background:#0f172a}body.dark tr.tot
   <div class="memory-card"><h4>🎢 Universal</h4><p>Ngày 21/07 dành cho Universal Beijing Resort. Vé đã dùng gồm 2 vé người lớn và 3 gói gia đình, tổng 1.042,34 USD, quy đổi 27.100.840đ.</p></div>
   <div class="memory-card"><h4>🧸 POP LAND / SOLANA</h4><p>Ngày 20 đi thẳng từ Gubei về khu Chaoyang Park: nhóm trẻ vào POP LAND, người lớn chờ ở SOLANA Blue Harbor. Lưu ý chính là xử lý vali.</p></div>
   <div class="memory-card"><h4>🛂 Visa</h4><p>Phí visa thực tế 2.300.000đ/người, tổng 11 người là 25.300.000đ, đã cộng vào quyết toán final.</p></div>
-  <div class="memory-card"><h4>💳 Chi tiêu ngoài</h4><p>Khoản chi Alipay tổng hợp khoảng 9.000 CNY, quy đổi 32.400.000đ, gồm ăn uống, mua sắm và chi phí phát sinh trong chuyến đi.</p></div>
+  <div class="memory-card"><h4>💳 Chi tiêu ngoài</h4><p>Khoản chi Alipay tổng hợp khoảng 9.000 CNY và WeChat 3.000 CNY, tổng 12.000 CNY, quy đổi 43.200.000đ, gồm ăn uống, mua sắm và chi phí phát sinh trong chuyến đi.</p></div>
 </div>
 <h3>📷 Album ảnh để bổ sung sau</h3>
 <div class="album-grid">
@@ -2220,6 +2223,7 @@ body.dark th{background:#1f2937}body.dark td{background:#0f172a}body.dark tr.tot
 <tr><td>Ảnh chụp Trip.com Universal #2</td><td>Gói gia đình Universal Beijing Resort x 3, tổng 843,72 USD</td><td>Bổ sung sau v11, quy đổi 26.000đ/USD</td></tr>
 <tr><td>Phí visa do người phụ trách cung cấp</td><td>2.300.000đ/người x 11 người = 25.300.000đ</td><td>Bổ sung sau v13; chỉnh lại v15 theo thực tế</td></tr>
 <tr><td>Tổng hợp Alipay do người phụ trách cung cấp</td><td>Chi tiêu ngoài khoảng 9.000 CNY</td><td>Bổ sung sau v11, quy đổi 3.600đ/CNY</td></tr>
+<tr><td>Tổng hợp WeChat do người phụ trách cung cấp</td><td>Chi tiêu ngoài khoảng 3.000 CNY</td><td>Bổ sung sau v15, quy đổi 3.600đ/CNY</td></tr>
 <tr><td>Biên lai điện tử (bao gồm phiên bản tiếng Anh).pdf</td><td>Receipt nhóm MU••63: 5 khách, tổng 37.698.794đ</td><td>VJ7712 + VJ7713</td></tr>
 <tr><td>Hành trình điện tử (phiên bản chỉ có tiếng Anh).pdf</td><td>Giờ bay, tên 5 khách, 7 kg cabin, không ký gửi</td><td>Booking 166••••••6065</td></tr>
 <tr><td>E-receipt.pdf</td><td>Receipt nhóm JM••2V: 6 khách, tổng 48.880.000đ</td><td>Thanh toán Visa</td></tr>
@@ -2235,10 +2239,10 @@ body.dark th{background:#1f2937}body.dark td{background:#0f172a}body.dark tr.tot
 <div class="source"><b>Quy tắc dữ liệu:</b> số tiền “thực trả” chỉ lấy từ receipt hoặc trạng thái Paid trên voucher; file trùng không cộng lặp. Các PIN và phần số thẻ đã bị loại bỏ. Các thời gian di chuyển trong thành phố là ước tính có buffer, cần kiểm tra bản đồ và giờ vận hành thực tế trong ngày.</div>
 </section>
 </div></main>
-<footer>Public masked build v15 — cập nhật final chi phí Universal + visa 2.300.000đ/người + Alipay, dashboard thanh toán, Travel Report, xuất Excel và dark mode. Dữ liệu nhạy cảm vẫn được che.</footer>
+<footer>Public masked build v16 — cập nhật final chi phí Universal + visa 2.300.000đ/người + Alipay + WeChat, dashboard thanh toán, Travel Report, xuất Excel và dark mode. Dữ liệu nhạy cảm vẫn được che.</footer>
 </article>
 <button aria-label="Lên đầu trang" id="floatingToTop" onclick="scrollToTop()">↑</button><script>
-const key='beijing-gubei-2026-public-masked-v14-final';
+const key='beijing-gubei-2026-public-masked-v16-final';
 const editable=document.getElementById('editable');
 function toggleEdit(){
   if(!editable){return;}
@@ -2267,7 +2271,7 @@ function downloadHtml(){
   const blob=new Blob(['<!doctype html>\n'+clone.outerHTML],{type:'text/html;charset=utf-8'});
   const a=document.createElement('a');
   a.href=URL.createObjectURL(blob);
-  a.download='beijing_trip_2026_final_v14.html';
+  a.download='beijing_trip_2026_final_v16.html';
   document.body.appendChild(a);
   a.click();
   a.remove();
