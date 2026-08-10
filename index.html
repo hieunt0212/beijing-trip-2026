@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Kế hoạch Bắc Kinh – Gubei – Universal 2026 (Verified v7 + Forbidden City 13:00)</title>
+<title>Bắc Kinh – Gubei – Universal 2026 (Final Expense & Travel Report v15 + Visa Fee 2.3M)</title>
 <style>
 :root{--ink:#172033;--muted:#667085;--line:#d8dee9;--bg:#eef2f6;--paper:#fff;--red:#b42318;--redbg:#fff1f0;--amber:#9a6700;--amberbg:#fff8e1;--green:#067647;--greenbg:#ecfdf3;--blue:#175cd3;--bluebg:#eff8ff;--orange:#c2410c;--shadow:0 12px 35px rgba(20,35,60,.12)}
 *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
@@ -343,32 +343,162 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
     .tour-meta b{display:block;color:#475569;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
     @media(max-width:900px){.tour-meta{grid-template-columns:1fr 1fr}}
     @media(max-width:600px){.tour-meta{grid-template-columns:1fr}}
+
+/* v8 flybar */
+html{scroll-padding-top:112px}
+section{scroll-margin-top:122px}
+.flybar{
+  position:sticky;
+  top:0;
+  z-index:9999;
+  background:rgba(255,255,255,.98);
+  backdrop-filter:saturate(180%) blur(12px);
+  border-bottom:1px solid var(--line);
+  box-shadow:0 8px 24px rgba(20,35,60,.12);
+}
+.flybar-top{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:8px 14px 6px;
+}
+.flybar-logo{
+  color:var(--ink);
+  font-weight:900;
+  text-decoration:none;
+  font-size:16px;
+  white-space:nowrap;
+}
+.flybar-status{
+  display:inline-flex;
+  align-items:center;
+  border:1px solid #bbf7d0;
+  background:#f0fdf4;
+  color:#166534;
+  border-radius:999px;
+  padding:3px 8px;
+  font-size:12px;
+  font-weight:800;
+  white-space:nowrap;
+}
+.flybar-actions{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  margin-left:auto;
+}
+.flybar-btn{
+  padding:7px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--ink);
+  font-weight:800;
+  font-size:13px;
+  cursor:pointer;
+}
+.flybar-btn.primary{
+  background:var(--blue);
+  color:#fff;
+  border-color:var(--blue);
+}
+.flybar-nav{
+  display:flex;
+  gap:6px;
+  overflow-x:auto;
+  overscroll-behavior-x:contain;
+  -webkit-overflow-scrolling:touch;
+  padding:0 14px 9px;
+  scrollbar-width:thin;
+}
+.flybar-nav a{
+  flex:0 0 auto;
+  color:var(--blue);
+  text-decoration:none;
+  font-weight:800;
+  font-size:13px;
+  border:1px solid #dbeafe;
+  background:#eff8ff;
+  border-radius:999px;
+  padding:7px 10px;
+  white-space:nowrap;
+}
+.flybar-nav a:hover{background:#dbeafe}
+#floatingToTop{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:10000;
+  width:46px;
+  height:46px;
+  border-radius:50%;
+  border:0;
+  background:var(--blue);
+  color:#fff;
+  box-shadow:0 10px 25px rgba(20,35,60,.25);
+  font-size:22px;
+  font-weight:900;
+  display:none;
+}
+body.scrolled #floatingToTop{display:block}
+#public-masked-banner{margin-top:16px}
+@media(max-width:720px){
+  html{scroll-padding-top:132px}
+  section{scroll-margin-top:140px}
+  .flybar-top{padding:7px 10px 5px}
+  .flybar-logo{font-size:14px}
+  .flybar-status{display:none}
+  .flybar-btn{font-size:12px;padding:6px 8px}
+  .flybar-nav{padding:0 10px 8px}
+  .flybar-nav a{font-size:12px;padding:6px 9px}
+}
+@media print{
+  .flybar,#floatingToTop{display:none!important}
+}
+
+/* v9 itinerary nuance */
+.time-note{display:inline-block;padding:2px 7px;border-radius:999px;background:#fff8e1;color:#9a6700;font-size:12px;font-weight:800;margin-left:6px}
+
+
+/* v15 expense dashboard + travel report + corrected visa fee */
+.expense-dashboard{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:14px 0 18px}
+.expense-metric{border:1px solid var(--line);border-radius:16px;background:#fff;padding:15px;box-shadow:0 7px 20px rgba(20,35,60,.06)}
+.expense-metric span{display:block;color:var(--muted);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.expense-metric b{display:block;font-size:21px;margin-top:4px;color:var(--ink)}
+.expense-metric .note{font-size:12px;color:var(--muted);margin-top:3px}
+.expense-tools{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 16px}.expense-tools button{background:var(--green);color:#fff;border-color:var(--green)}
+.expense-breakdown{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:12px 0 20px}
+.expense-chip{border:1px solid var(--line);border-radius:13px;background:#f8fafc;padding:12px}.expense-chip b{display:block;font-size:16px}.expense-chip span{display:block;color:var(--muted);font-size:12px}
+.expense-bar{height:10px;border-radius:999px;background:#e5e7eb;overflow:hidden;margin-top:8px}.expense-bar i{display:block;height:100%;background:linear-gradient(90deg,#175cd3,#ea580c)}
+.report-hero{border:1px solid #fed7aa;background:linear-gradient(135deg,#fff7ed,#eff8ff);border-radius:18px;padding:20px;margin:12px 0 18px}
+.report-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:12px}.report-stats div{border:1px solid var(--line);border-radius:14px;background:#fff;padding:13px}.report-stats b{display:block;font-size:20px;color:var(--orange)}
+.memory-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.memory-card{border:1px solid var(--line);border-radius:14px;background:#fff;padding:15px;break-inside:avoid}.memory-card h4{margin-top:0;color:var(--blue)}
+.album-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.album-slot{border:1px dashed #94a3b8;border-radius:14px;background:#f8fafc;min-height:120px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);font-weight:800;padding:10px}
+.closing-card{text-align:center;border:1px solid #fed7aa;background:#fff7ed;border-radius:20px;padding:24px;margin-top:18px}.closing-card b{font-size:24px;color:var(--orange)}
+body.dark{--ink:#e5e7eb;--muted:#cbd5e1;--line:#334155;--bg:#020617;--paper:#0f172a;--shadow:0 12px 35px rgba(0,0,0,.45)}
+body.dark .flybar,body.dark .toolbar{background:rgba(15,23,42,.96)}body.dark .card,body.dark .expense-metric,body.dark .memory-card,body.dark .report-stats div,body.dark .option-card,body.dark .app-card,body.dark details,body.dark .tour-card{background:#111827;color:var(--ink)}
+body.dark th{background:#1f2937}body.dark td{background:#0f172a}body.dark tr.total td{background:#1f2937}body.dark .expense-chip,body.dark .album-slot,body.dark .source{background:#111827}body.dark .report-hero{background:linear-gradient(135deg,#1f2937,#0f172a)}body.dark .closing-card{background:#1f2937}body.dark .flybar-logo{color:var(--ink)}body.dark .flybar-btn{background:#111827;color:var(--ink)}
+@media(max-width:900px){.expense-dashboard,.expense-breakdown,.report-stats,.memory-grid,.album-grid{grid-template-columns:1fr}}
+@media print{.expense-tools{display:none!important}.report-hero,.memory-card,.album-slot,.closing-card{break-inside:avoid}}
+
 </style>
 </head>
-<body>
-<div class="toolbar">
-<button class="primary" onclick="toggleEdit()">Bật / tắt chỉnh sửa</button>
-<button onclick="saveDraft()">Lưu nháp trong trình duyệt</button>
-<button onclick="loadDraft()">Mở nháp</button>
-<button class="hot" onclick="downloadHtml()">Tải HTML hiện tại</button>
-<button id="toggleSensitiveBtn" onclick="toggleSensitive()">Hiện thông tin hộ chiếu/visa</button><button id="printArrivalBtn" onclick="printArrivalCards()">In 11 Arrival Cards</button><button onclick="window.print()">In / lưu PDF</button>
-<small>Không chứa PIN khách sạn hoặc số thẻ. Google Docs gốc không bị thay đổi.</small>
-</div>
+<body><header aria-label="Điều hướng nhanh" class="flybar" role="navigation"><div class="flybar-top"><a class="flybar-logo" href="#root">Bắc Kinh 2026</a><span class="flybar-status">Public masked</span><div class="flybar-actions"><button class="flybar-btn" onclick="window.print()">In / PDF</button><button class="flybar-btn" onclick="toggleTheme()">Sáng / tối</button><button class="flybar-btn" onclick="location.hash='arrival-cards'">Arrival Cards</button><button class="flybar-btn primary" id="toTopBtn" onclick="scrollToTop()">↑ Top</button></div></div><nav class="flybar-nav"><a href="#critical">Việc khẩn cấp</a><a href="#payments">Thanh toán</a><a href="#flights">Chuyến bay</a><a href="#hotels">Khách sạn</a><a href="#transfers">Xe sân bay</a><a href="#tickets-tours">Vé tham quan</a><a href="#baggage">Hành lý</a><a href="#itinerary">Lộ trình</a><a href="#checkin">Check-in Trung Quốc</a><a href="#apps">Ứng dụng</a><a href="#trip-report">Travel Report</a><a href="#checklist">Checklist</a><a href="#sources">Nguồn PDF</a><a href="#documents">Hộ chiếu &amp; visa</a><a href="#arrival-cards">Arrival Cards</a></nav></header>
 <article class="page" id="root">
 <header class="hero">
 <div class="eyebrow">Bản đối chiếu từ toàn bộ PDF đã tải lên</div>
 <h1>Bắc Kinh - Gubei - Universal Beijing 2026</h1>
 <p>17/07/2026 tối - 23/07/2026 sáng | 11 người | Dữ liệu vé máy bay, khách sạn, thanh toán và hành lý đã được đối chiếu theo hóa đơn/voucher.</p>
 <div class="stats">
-<div class="stat"><span>Vé máy bay đã trả</span><b>86.578.794đ</b></div>
-<div class="stat"><span>KS đã trả bằng VND</span><b>27.749.915đ</b></div>
-<div class="stat"><span>KS đã trả bằng USD</span><b>544,56 USD</b></div>
-<div class="stat"><span>Hành lý ký gửi</span><b>6 người x 20 kg</b></div>
+<div class="stat"><span>Tổng chi quy đổi</span><b>218.927.275đ</b></div>
+<div class="stat"><span>Bình quân 11 người</span><b>19.902.480đ/người</b></div>
+<div class="stat"><span>Universal đã dùng</span><b>27.100.840đ</b></div>
+<div class="stat"><span>Visa + Alipay</span><b>57.700.000đ</b></div>
 </div>
 </header>
 <main>
 <div class="edit-note">Đang chỉnh sửa trực tiếp. Sau khi sửa, hãy bấm “Lưu nháp” hoặc “Tải HTML hiện tại”.</div>
-<nav class="toc"><a href="#critical">Việc khẩn cấp</a><a href="#payments">Thanh toán</a><a href="#flights">Chuyến bay</a><a href="#hotels">Khách sạn</a><a href="#transfers">Xe sân bay</a><a href="#tickets-tours">Vé tham quan</a><a href="#baggage">Hành lý</a><a href="#itinerary">Lộ trình</a><a href="#checkin">Check-in Trung Quốc</a><a href="#apps">Ứng dụng</a><a href="#sources">Nguồn PDF</a><a href="#documents">Hộ chiếu &amp; visa</a><a href="#arrival-cards">Arrival Cards</a></nav>
+<div class="callout warn" id="public-masked-banner"><b>Bản public cho đoàn:</b> dữ liệu nhạy cảm đã được che; dùng thanh điều hướng cố định phía trên để nhảy nhanh giữa các mục.</div>
 <div contenteditable="false" id="editable">
 <section id="critical">
 <h2>1. Những việc cần xử lý trước khi khởi hành</h2>
@@ -377,7 +507,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="alert red"><b>3) Vé Simatai ban đêm chưa nằm trong gói.</b> Voucher chỉ ghi “quyền mua vé Night Tour giảm giá”, không phải vé vào cửa. Cần mua/đặt riêng sau khi xác nhận chính sách trẻ em và cáp treo.</div>
 <div class="alert red"><b>4) Giờ ra sân bay về phải sớm hơn kế hoạch cũ.</b> VJ7713 cất cánh 01:20 ngày 23/07; itinerary đề nghị có mặt trước ít nhất 3 giờ. Với 11 người và hành lý ký gửi, nên rời THE YARD khoảng <b>20:30 ngày 22/07</b>, mục tiêu tới PKX 21:30-22:00. Không nên đợi tới 21:45-22:15 mới rời khách sạn.</div>
 <div class="alert amber"><b>5) Xác nhận lưu hành lý.</b> Voucher không cam kết giữ vali qua đêm 19-20/07 hoặc tới tối 22/07. Cần xác nhận trực tiếp với THE YARD. Nếu không được, xe đi Gubei phải đủ khoang hành lý cho 11 người.</div>
-<div class="alert amber"><b>6) Late check-in rạng sáng 18/07.</b> Phòng được đặt từ 17/07 nhưng đoàn chỉ tới khoảng 02:00-02:30 ngày 18/07. Phải báo khách sạn trước, cung cấp booking 1669108402603683 và yêu cầu ghi chú “late arrival - hold all 4 rooms - do not mark no-show”.</div>
+<div class="alert amber"><b>6) Late check-in rạng sáng 18/07.</b> Phòng được đặt từ 17/07 nhưng đoàn chỉ tới khoảng 02:00-02:30 ngày 18/07. Phải báo khách sạn trước, cung cấp booking 166••••••3683 và yêu cầu ghi chú “late arrival - hold all 4 rooms - do not mark no-show”.</div>
 <div class="card">
 <h3>Ứng dụng bắt buộc cài trước khi đi</h3>
 <ul>
@@ -397,7 +527,6 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <li>☐ Chuẩn bị phương án dự phòng: gọi thêm DiDi/Trip.com transfer nếu tài xế từ chối do quá số người hoặc hành lý.</li>
 </ul>
 </div>
-
 <div class="card">
 <h3>Cố Cung 13:00 ngày 18/07</h3>
 <ul>
@@ -407,33 +536,73 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <li>☐ Vì tour Cố Cung là <b>13:00</b>, không còn coi đây là lịch “Tử Cấm Thành buổi sáng”.</li>
 </ul>
 </div>
+<div class="card">
+<h3>Ngày 18: Cố Cung + Thiên Đàn buổi tối</h3>
+<ul>
+<li>☐ Sau Cố Cung 13:00, kiểm tra sức khỏe đoàn trước khi quyết định đi Thiên Đàn.</li>
+<li>☐ Nếu đi, gọi DiDi/taxi 2-3 xe từ khu Cố Cung sang Thiên Đàn để giảm đi bộ.</li>
+<li>☐ Đi với kỳ vọng dạo công viên buổi tối; các khu thắng cảnh chính có thể đã đóng nếu đến muộn.</li>
+</ul>
+</div>
+<div class="card">
+<h3>Ngày 19: thay Bảo tàng Quốc gia bằng Phủ Cung Vương / Phủ Hòa Thân</h3>
+<ul>
+<li>☐ Đặt vé Prince Gong’s Palace Museum trước nếu hệ thống yêu cầu; đi Chủ nhật nên dễ đông.</li>
+<li>☐ Gọi DiDi/taxi 2-3 xe từ THE YARD tới Phủ Cung Vương để tiết kiệm sức.</li>
+<li>☐ Sau Phủ Cung Vương chỉ dạo nhẹ Shichahai/Houhai, không kéo quá lâu vì 14:00 cần rời Bắc Kinh đi Gubei.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Ngày 20: đi thẳng Gubei → POP LAND/SOLANA</h3>
+<ul>
+<li>☐ Xác nhận trước với bác tài: điểm đến <b>朝阳公园西3门 / POP LAND / 泡泡玛特城市乐园</b>, không về khách sạn trước.</li>
+<li>☐ Hành lý là rủi ro chính: không để vali ngoài xe nếu tài xế không chờ. Phương án an toàn là tài xế chờ/giữ vali, hoặc ghé THE YARD thả vali trước rồi mới đi POP LAND.</li>
+<li>☐ Người lớn không vào POP LAND có thể chờ ở <b>SOLANA Blue Harbor / 蓝色港湾</b>, ngay khu Chaoyang Park, có mall, café, nhà hàng, siêu thị, chỗ ngồi nghỉ.</li>
+</ul>
+</div>
 </section>
 <section id="payments">
 <h2>2. Thanh toán thực tế đã xác nhận</h2>
-<table>
-<thead><tr><th>Hạng mục</th><th>Booking</th><th>Chi tiết</th><th>Thực trả</th></tr></thead>
+<div class="alert green"><b>Cập nhật final:</b> đã bổ sung 2 booking Universal Beijing, phí visa 2.300.000đ/người và khoản chi tiêu ngoài qua Alipay khoảng 9.000 CNY. Toàn bộ số tiền trong tab này đã được quy đổi về VND để dễ tổng kết.</div>
+<div class="expense-dashboard">
+  <div class="expense-metric"><span>Tổng chi sau quy đổi</span><b>218.927.275đ</b><div class="note">Booking + Universal + visa + Alipay</div></div>
+  <div class="expense-metric"><span>Bình quân 11 người</span><b>19.902.480đ</b><div class="note">Tính đều toàn đoàn</div></div>
+  <div class="expense-metric"><span>Universal Beijing</span><b>27.100.840đ</b><div class="note">1.042,34 USD x 26,000đ</div></div>
+  <div class="expense-metric"><span>Phí visa</span><b>25.300.000đ</b><div class="note">11 người x 2.300.000đ</div></div>
+  <div class="expense-metric"><span>Chi tiêu Alipay</span><b>32.400.000đ</b><div class="note">9.000 CNY x 3,600đ</div></div>
+</div>
+<div class="expense-tools"><button onclick="exportExpensesExcel()">Xuất Excel chi phí (.xls)</button></div>
+<table id="expenseTable">
+<thead><tr><th>Nhóm</th><th>Hạng mục</th><th>Booking / nguồn</th><th>Chi tiết</th><th>Nguyên tệ</th><th>Quy đổi VND</th><th>Trạng thái</th></tr></thead>
 <tbody>
-<tr><td>Vé khứ hồi - nhóm 5 khách</td><td>1669109038246065<br/>Airline ref: MU5S63</td><td>VJ7712 + VJ7713; 5 hành khách; có giảm phí thanh toán và Trip Coins</td><td class="money"><b>37.698.794đ</b></td></tr>
-<tr><td>Vé khứ hồi - nhóm 6 khách</td><td>1669109035160433<br/>Airline ref: JM2T2V</td><td>VJ7712 + VJ7713; 6 hành khách; thanh toán Visa</td><td class="money"><b>48.880.000đ</b></td></tr>
-<tr class="total"><td colspan="3">Tổng vé máy bay 11 người</td><td class="money">86.578.794đ</td></tr>
-<tr><td>THE YARD 17-19/07</td><td>1669108402603683</td><td>4 phòng x 2 đêm. Voucher hiển thị 15.475.568đ; e-receipt cho biết số thực trả sau Trip Coins là 15.322.704đ.</td><td class="money"><b>15.322.704đ</b></td></tr>
-<tr><td>Junyue Inn 19-20/07</td><td>1669108415593921<br/>1669108415604132<br/>1669108415604137</td><td>3 phòng x 1 đêm</td><td class="money"><b>12.427.211đ</b></td></tr>
-<tr><td>THE YARD 20-22/07</td><td>1669108430250667</td><td>4 phòng x 2 đêm; VAT 31,44 USD đã bao gồm</td><td class="money"><b>544,56 USD</b></td></tr>
-<tr>
-<td>Xe đón sân bay PKX → THE YARD</td>
-<td>1688899988190052<br/>1669108778889974<br/>1669108778890301</td>
-<td>3 xe Trip.com Transfers; cần xác nhận lại vì voucher hiện cộng mới 8 người và tối đa 6 kiện hành lý.</td>
-<td>1.279.178đ + 24,60 USD</td>
-</tr><tr>
-<td>Cố Cung Bắc Kinh / Tử Cấm Thành tour 13:00</td>
-<td>1669108542575719</td>
-<td>18/07/2026; 6 người lớn + 5 trẻ em; E-suất 13 giờ + vé đặt trước + thuyết minh tiếng Anh theo tour ghép; không gồm phương tiện/đón trả khách.</td>
-<td>3.720.388đ</td>
-</tr><tr class="total"><td colspan="3">Tổng booking đã trả chính xác theo nguyên tệ</td><td class="money">119.328.275đ + 569,16 USD</td></tr>
-<tr><td colspan="3">Tham chiếu quy đổi 569,16 USD ở mức 26.000đ/USD</td><td class="money">≈ 14.798.160đ</td></tr>
-<tr class="total"><td colspan="3">Tổng tham chiếu sau quy đổi</td><td class="money">≈ 134.126.435đ</td></tr>
+<tr><td>✈️ Vé máy bay</td><td>Vé khứ hồi - nhóm 5 khách</td><td>166••••••6065<br/>Airline ref: MU••63</td><td>VJ7712 + VJ7713; 5 hành khách; có giảm phí thanh toán và Trip Coins.</td><td class="money">37.698.794đ</td><td class="money"><b>37.698.794đ</b></td><td>✅ Đã thanh toán</td></tr>
+<tr><td>✈️ Vé máy bay</td><td>Vé khứ hồi - nhóm 6 khách</td><td>166••••••0433<br/>Airline ref: JM••2V</td><td>VJ7712 + VJ7713; 6 hành khách; thanh toán Visa.</td><td class="money">48.880.000đ</td><td class="money"><b>48.880.000đ</b></td><td>✅ Đã thanh toán</td></tr>
+<tr class="total"><td colspan="5">Tổng vé máy bay 11 người</td><td class="money">86.578.794đ</td><td></td></tr>
+<tr><td>🏨 Khách sạn</td><td>THE YARD 17-19/07</td><td>166••••••3683</td><td>4 phòng x 2 đêm. E-receipt cho biết số thực trả sau Trip Coins là 15.322.704đ.</td><td class="money">15.322.704đ</td><td class="money"><b>15.322.704đ</b></td><td>✅ Đã thanh toán</td></tr>
+<tr><td>🏨 Khách sạn</td><td>Junyue Inn 19-20/07</td><td>166••••••3921<br/>166••••••4132<br/>166••••••4137</td><td>3 phòng x 1 đêm tại Gubei Water Town.</td><td class="money">12.427.211đ</td><td class="money"><b>12.427.211đ</b></td><td>✅ Đã thanh toán</td></tr>
+<tr><td>🏨 Khách sạn</td><td>THE YARD 20-22/07</td><td>166••••••0667</td><td>4 phòng x 2 đêm; VAT 31,44 USD đã bao gồm.</td><td class="money">544,56 USD</td><td class="money"><b>14.158.560đ</b></td><td>✅ Đã thanh toán</td></tr>
+<tr class="total"><td colspan="5">Tổng khách sạn sau quy đổi</td><td class="money">41.908.475đ</td><td></td></tr>
+<tr><td>🚗 Di chuyển</td><td>Xe đón sân bay PKX → THE YARD</td><td>168••••••0052<br/>166••••••9974<br/>166••••••0301</td><td>3 xe Trip.com Transfers; gồm 1.279.178đ + 24,60 USD.</td><td class="money">1.279.178đ + 24,60 USD</td><td class="money"><b>1.918.778đ</b></td><td>✅ Đã thanh toán</td></tr>
+<tr><td>🎫 Vé tham quan</td><td>Cố Cung Bắc Kinh / Tử Cấm Thành tour 13:00</td><td>166••••••5719</td><td>18/07/2026; 6 người lớn + 5 trẻ em; E-suất 13 giờ + vé đặt trước + thuyết minh tiếng Anh theo tour ghép.</td><td class="money">3.720.388đ</td><td class="money"><b>3.720.388đ</b></td><td>✅ Đã thanh toán</td></tr>
+<tr><td>🎢 Universal</td><td>Universal Beijing Resort - vé người lớn x 2</td><td>Trip.com · mã 166••••••0228</td><td>Vé vào cổng một ngày chỉ định Universal Beijing Resort, ngày 21/07/2026.</td><td class="money">198,62 USD</td><td class="money"><b>5.164.120đ</b></td><td>✅ Đã sử dụng</td></tr>
+<tr><td>🎢 Universal</td><td>Universal Beijing Resort - gói gia đình x 3</td><td>Trip.com · mã 166••••••3640</td><td>Vé vào cổng một ngày chỉ định, gói gia đình 2 người lớn + 1 trẻ em, ngày 21/07/2026.</td><td class="money">843,72 USD</td><td class="money"><b>21.936.720đ</b></td><td>✅ Đã sử dụng</td></tr>
+<tr class="total"><td colspan="5">Tổng Universal Beijing</td><td class="money">27.100.840đ</td><td></td></tr>
+<tr><td>🛂 Visa</td><td>Phí visa Trung Quốc</td><td>Tổng hợp thực tế</td><td>11 người x 2.300.000đ/người.</td><td class="money">2.300.000đ x 11</td><td class="money"><b>25.300.000đ</b></td><td>✅ Đã thanh toán</td></tr>
+<tr class="total"><td colspan="5">Tổng phí visa</td><td class="money">25.300.000đ</td><td></td></tr>
+<tr><td>🍜 Ăn uống & shopping</td><td>Chi tiêu ngoài qua Alipay</td><td>Tổng hợp thực tế</td><td>Ăn uống, mua sắm, taxi/metro và các chi tiêu nhỏ trong chuyến đi; số người phụ trách cung cấp khoảng 9.000 CNY.</td><td class="money">9.000 CNY</td><td class="money"><b>32.400.000đ</b></td><td>✅ Đã chi</td></tr>
+<tr class="total"><td colspan="5">Tổng tất cả chi phí sau quy đổi VND</td><td class="money">218.927.275đ</td><td></td></tr>
+<tr><td colspan="5">Bình quân 11 người</td><td class="money"><b>19.902.480đ/người</b></td><td></td></tr>
 </tbody></table>
-<p class="small">Không dùng giá trên voucher thay cho số thẻ thực trả khi đã có e-receipt. Không quy đổi USD thành “thực trả VND” nếu chưa có sao kê ngân hàng. Xe sân bay đã được cộng theo nguyên tệ; phần 24,60 USD chỉ quy đổi để tham chiếu. Vé Cố Cung đã được cộng theo tổng tiền hiển thị trên Trip.com.</p>
+<div class="expense-breakdown">
+  <div class="expense-chip"><span>Vé máy bay</span><b>86.578.794đ</b><span>39,5%</span><div class="expense-bar"><i style="width:39.5%"></i></div></div>
+  <div class="expense-chip"><span>Khách sạn</span><b>41.908.475đ</b><span>19,1%</span><div class="expense-bar"><i style="width:19.1%"></i></div></div>
+  <div class="expense-chip"><span>Di chuyển</span><b>1.918.778đ</b><span>0,9%</span><div class="expense-bar"><i style="width:0.9%"></i></div></div>
+  <div class="expense-chip"><span>Vé tham quan</span><b>30.821.228đ</b><span>14,1%</span><div class="expense-bar"><i style="width:14.1%"></i></div></div>
+  <div class="expense-chip"><span>Visa</span><b>25.300.000đ</b><span>11,6%</span><div class="expense-bar"><i style="width:11.6%"></i></div></div>
+  <div class="expense-chip"><span>Ăn uống & shopping</span><b>32.400.000đ</b><span>14,8%</span><div class="expense-bar"><i style="width:14.8%"></i></div></div>
+</div>
+<p class="small"><b>Tỷ giá dùng để tổng kết:</b> 1 USD = 26.000đ; 1 CNY = 3.600đ. Đây là quy đổi tham chiếu để quyết toán nội bộ, không thay thế sao kê ngân hàng thực tế. Bản public vẫn che mã booking và dữ liệu nhạy cảm.</p>
 </section>
 <section id="flights">
 <h2>3. Chuyến bay và danh sách hành khách</h2>
@@ -441,7 +610,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="card"><h3>Lượt đi - VJ7712</h3><p><b>17/07/2026, Thứ Sáu</b></p><ul><li>Khởi hành: 19:55, Nội Bài T2.</li><li>Đến: 00:20 ngày 18/07, Beijing Daxing (PKX).</li><li>Khuyến nghị đoàn có mặt tại T2: <b>16:30-16:45</b>.</li><li>Giữ bản itinerary và hộ chiếu gốc của từng người.</li></ul></div>
 <div class="card"><h3>Lượt về - VJ7713</h3><p><b>23/07/2026, Thứ Năm</b></p><ul><li>Khởi hành: 01:20, Beijing Daxing (PKX).</li><li>Đến: 03:55, Nội Bài T2.</li><li>Mục tiêu có mặt PKX: <b>21:30-22:00 ngày 22/07</b>.</li><li>Rời THE YARD: khoảng <b>20:30</b>, điều chỉnh sớm hơn nếu mưa/tắc đường.</li></ul></div>
 </div>
-<h3>Nhóm MU5S63 - 5 khách, không có hành lý ký gửi miễn phí</h3>
+<h3>Nhóm MU••63 - 5 khách, không có hành lý ký gửi miễn phí</h3>
 <table><thead><tr><th>Hành khách</th><th>Loại vé</th><th>Ký gửi</th><th>Xách tay</th></tr></thead><tbody>
 <tr><td>NGUYEN THUY TIEN</td><td>Children</td><td><span class="badge risk">0 kg miễn phí</span></td><td>1 personal item + 1 cabin bag, tổng tối đa 7 kg</td></tr>
 <tr><td>VU MINH SON</td><td>Adult</td><td><span class="badge risk">0 kg miễn phí</span></td><td>Như trên</td></tr>
@@ -449,7 +618,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <tr><td>VU TU CUONG</td><td>Adult</td><td><span class="badge risk">0 kg miễn phí</span></td><td>Như trên</td></tr>
 <tr><td>NGUYEN THI THU HA</td><td>Adult</td><td><span class="badge risk">0 kg miễn phí</span></td><td>Như trên</td></tr>
 </tbody></table>
-<h3>Nhóm JM2T2V - 6 khách, mỗi người 20 kg ký gửi</h3>
+<h3>Nhóm JM••2V - 6 khách, mỗi người 20 kg ký gửi</h3>
 <table><thead><tr><th>Hành khách</th><th>Loại vé</th><th>Ký gửi mỗi chiều</th><th>Xách tay</th></tr></thead><tbody>
 <tr><td>NGUYEN TRONG DUC</td><td>Children</td><td><span class="badge ok">20 kg</span></td><td>1 personal item + 1 cabin bag, tổng tối đa 7 kg</td></tr>
 <tr><td>NGUYEN LINH DAN</td><td>Children</td><td><span class="badge ok">20 kg</span></td><td>Như trên</td></tr>
@@ -467,9 +636,9 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="transfer-grid">
 <div class="transfer-card">
 <h3>Xe 1 · Thi Hue/Nguyen</h3>
-<p><b>Mã đơn:</b> 1688899988190052</p>
+<p><b>Mã đơn:</b> 168••••••0052</p>
 <p><b>Biển số:</b><br/><span class="plate">京ARY930</span></p>
-<p><b>Tài xế:</b> jiaqingsong<br/><b>Điện thoại:</b> +86-13012028666</p>
+<p><b>Tài xế:</b> jiaqingsong<br/><b>Điện thoại:</b> +86-••••••666</p>
 <p><b>Xe:</b> Sylphy EV, màu đen</p>
 <p><b>Ghi nhận pax:</b> 2 người lớn + 2 trẻ em</p>
 <p><b>Giới hạn ghi trên voucher:</b> tối đa 4 người lớn, tối đa 2 kiện hành lý</p>
@@ -477,9 +646,9 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 </div>
 <div class="transfer-card">
 <h3>Xe 2 · TRONG HIEU/NGUYEN</h3>
-<p><b>Mã đơn:</b> 1669108778889974</p>
+<p><b>Mã đơn:</b> 166••••••9974</p>
 <p><b>Biển số:</b><br/><span class="plate">京N2PE36</span></p>
-<p><b>Tài xế:</b> liuyang<br/><b>Điện thoại:</b> +86-17813067221</p>
+<p><b>Tài xế:</b> liuyang<br/><b>Điện thoại:</b> +86-••••••221</p>
 <p><b>Xe:</b> Accord Sport hybrid, màu trắng</p>
 <p><b>Ghi nhận pax:</b> 1 người lớn + 1 trẻ em</p>
 <p><b>Giới hạn ghi trên voucher:</b> tối đa 4 người lớn, tối đa 2 kiện hành lý</p>
@@ -487,9 +656,9 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 </div>
 <div class="transfer-card">
 <h3>Xe 3 · Vu/Tu Cuong</h3>
-<p><b>Mã đơn:</b> 1669108778890301</p>
+<p><b>Mã đơn:</b> 166••••••0301</p>
 <p><b>Biển số:</b><br/><span class="plate">京AEW0990</span></p>
-<p><b>Tài xế:</b> zhangdong<br/><b>Điện thoại:</b> +86-13241476678</p>
+<p><b>Tài xế:</b> zhangdong<br/><b>Điện thoại:</b> +86-••••••678</p>
 <p><b>Xe:</b> BYD Qin, màu xám</p>
 <p><b>Ghi nhận pax:</b> 2 người lớn + 0 trẻ em</p>
 <p><b>Giới hạn ghi trên voucher:</b> tối đa 4 người lớn, tối đa 2 kiện hành lý</p>
@@ -522,7 +691,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="tour-card">
 <h3>Cố Cung Bắc Kinh / Tử Cấm Thành — 18/07/2026 lúc 13:00</h3>
 <div class="tour-meta">
-<div><b>Mã đơn</b>1669108542575719</div>
+<div><b>Mã đơn</b>166••••••5719</div>
 <div><b>Ngày</b>18/07/2026 · Thứ Bảy</div>
 <div><b>Giờ hẹn</b>13:00 tại Cố Cung</div>
 <div><b>Tổng tiền</b>3.720.388đ</div>
@@ -540,19 +709,44 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <b>Chưa bao gồm:</b> phương tiện, đón/trả khách, ghế an toàn cho trẻ em, tiền boa và các chi phí không ghi trong gói. Vì vậy cả đoàn cần tự di chuyển tới điểm hẹn Cố Cung.
     </div>
 </div>
+<div class="tour-card">
+<h3>Dự kiến cần đặt: Phủ Cung Vương / Prince Gong’s Palace Museum — 19/07/2026</h3>
+<div class="tour-meta">
+<div><b>Ngày dự kiến</b>19/07/2026 · Chủ nhật</div>
+<div><b>Giờ nên đi</b>09:30–11:30</div>
+<div><b>Vị trí</b>17 West Qianhai Street, Xicheng</div>
+<div><b>Giá tham khảo</b>CNY 40/người</div>
+</div>
+<div class="callout">
+<b>Lý do thay Bảo tàng Quốc gia:</b> Phủ Cung Vương nằm sát khu Shichahai/Houhai, hợp tuyến để đi bộ/dạo hồ rồi quay về THE YARD lấy hành lý trước khi đi Gubei.
+      </div>
+</div>
+
+<div class="tour-card">
+<h3>POP LAND + SOLANA Blue Harbor — phương án ngày 20/07</h3>
+<div class="tour-meta">
+<div><b>POP LAND</b>Trong Chaoyang Park, gần West Gate 3</div>
+<div><b>Người lớn chờ</b>SOLANA Blue Harbor / 蓝色港湾</div>
+<div><b>Ga metro gần</b>Zaoying / 枣营站 · Line 14</div>
+<div><b>Về THE YARD</b>Line 14 → Jiulongshan → Line 7 → Zhushikou</div>
+</div>
+<div class="callout warn">
+<b>Lưu ý:</b> nếu đi thẳng từ Gubei tới POP LAND/SOLANA, phải chốt trước chỗ xử lý vali. Không nên kéo vali vào POP LAND hoặc để lẫn nhiều vali khi tách nhóm.
+      </div>
+</div>
 </section>
 <section id="hotels">
 <h2>6. Khách sạn - thông tin vận hành</h2>
-<div class="card"><h3>THE YARD HOTEL BEIJING, Qianmen Avenue</h3><p><b>中文:</b> 懿庭臻舍酒店（北京前門步行街店）</p><p><b>Địa chỉ:</b> No. 143 Qianmen Street, Dongcheng District, Beijing / 北京市东城区前门大街143号</p><p><b>Điện thoại:</b> +86-10-59006499-0, +86-10-59006495-0</p><p><b>Ga sử dụng chính:</b> Zhushikou / 珠市口, Line 7 + Line 8. Thời gian đi bộ phụ thuộc lối ra và đoạn phố đi bộ; kiểm tra Amap khi đến.</p></div>
+<div class="card"><h3>THE YARD HOTEL BEIJING, Qianmen Avenue</h3><p><b>中文:</b> 懿庭臻舍酒店（北京前門步行街店）</p><p><b>Địa chỉ:</b> No. 143 Qianmen Street, Dongcheng District, Beijing / 北京市东城区前门大街143号</p><p><b>Điện thoại:</b> +86-10-5900••••, +86-10-5900••••</p><p><b>Ga sử dụng chính:</b> Zhushikou / 珠市口, Line 7 + Line 8. Thời gian đi bộ phụ thuộc lối ra và đoạn phố đi bộ; kiểm tra Amap khi đến.</p></div>
 <table><thead><tr><th>Đợt</th><th>Giờ phòng</th><th>Phòng / bữa ăn</th><th>Điểm cần nhớ</th></tr></thead><tbody>
 <tr><td>17-19/07</td><td>Nhận sau 14:00 ngày 17/07<br/>Trả trước 12:00 ngày 19/07</td><td>4 phòng, 2 đêm<br/>Ultimate Double Bed Room<br/>1 queen/room<br/>Không gồm bữa sáng</td><td>Đến rạng sáng 18/07: bắt buộc báo late arrival. Voucher có điều khoản no-show. Xác nhận đủ 11 khách và 4 phòng.</td></tr>
 <tr><td>20-22/07</td><td>Nhận sau 14:00 ngày 20/07<br/>Trả trước 12:00 ngày 22/07</td><td>4 phòng, 2 đêm<br/>1 queen/room<br/>Không gồm bữa sáng</td><td>Có trải nghiệm in dập thủ công, thư pháp và Hán phục theo voucher; hỏi lễ tân về lịch/đặt chỗ. Ngày 20 không mặc định được nhận phòng lúc 11:00.</td></tr>
 </tbody></table>
 <div class="card"><h3>Junyue Inn - Gubei Water Town</h3><p><b>中文:</b> 古北水鎮君約客棧</p><p><b>Địa chỉ:</b> Inside Gubei Water Town Scenic Area, Miyun District, Beijing</p><p><b>Điện thoại:</b> +86-10-81009999-1</p><p><b>Nhận phòng:</b> sau 15:00 ngày 19/07 | <b>Trả phòng:</b> trước 12:00 ngày 20/07</p></div>
 <table><thead><tr><th>Booking</th><th>Loại phòng</th><th>Sức chứa trên voucher</th><th>Quyền lợi</th><th>Giá</th></tr></thead><tbody>
-<tr><td>1669108415593921</td><td>Water-View Double Bed, Balcony<br/>1 queen</td><td>2 người lớn</td><td>Ăn sáng 2; vé Gubei 2; suối khoáng 2; shuttle nội khu; vận chuyển hành lý nội khu; quyền mua Night Tour giảm giá; giảm thuyền 20 CNY/người; giảm 12% ăn uống.</td><td class="money">2.903.554đ</td></tr>
-<tr><td>1669108415604132</td><td>Family Room Water-View, Balcony<br/>1 kang + 1 queen</td><td>4 người lớn</td><td>Ăn sáng 4; vé Gubei 4; suối khoáng 4; các quyền lợi nội khu tương tự.</td><td class="money">4.955.399đ</td></tr>
-<tr><td>1669108415604137</td><td>Family Room<br/>1 double + 1 queen</td><td>4 người lớn</td><td>Ăn sáng 4; vé Gubei 4; suối khoáng 4; các quyền lợi nội khu tương tự.</td><td class="money">4.568.258đ</td></tr>
+<tr><td>166••••••3921</td><td>Water-View Double Bed, Balcony<br/>1 queen</td><td>2 người lớn</td><td>Ăn sáng 2; vé Gubei 2; suối khoáng 2; shuttle nội khu; vận chuyển hành lý nội khu; quyền mua Night Tour giảm giá; giảm thuyền 20 CNY/người; giảm 12% ăn uống.</td><td class="money">2.903.554đ</td></tr>
+<tr><td>166••••••4132</td><td>Family Room Water-View, Balcony<br/>1 kang + 1 queen</td><td>4 người lớn</td><td>Ăn sáng 4; vé Gubei 4; suối khoáng 4; các quyền lợi nội khu tương tự.</td><td class="money">4.955.399đ</td></tr>
+<tr><td>166••••••4137</td><td>Family Room<br/>1 double + 1 queen</td><td>4 người lớn</td><td>Ăn sáng 4; vé Gubei 4; suối khoáng 4; các quyền lợi nội khu tương tự.</td><td class="money">4.568.258đ</td></tr>
 <tr class="total"><td colspan="2">Tổng</td><td>10 khách trên voucher</td><td>10 suất ăn sáng + vé Gubei + suối khoáng</td><td class="money">12.427.211đ</td></tr>
 </tbody></table>
 <div class="alert amber"><b>Vận chuyển hành lý của Junyue Inn chỉ được mô tả là dịch vụ trong khu Gubei Water Town.</b> Không hiểu là vận chuyển từ Bắc Kinh tới Gubei. Hỏi rõ điểm giao/nhận hành lý và điểm check-in (cổng dịch vụ hay trực tiếp tại inn).</div>
@@ -560,7 +754,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <section id="baggage">
 <h2>7. Kế hoạch hành lý</h2>
 <div class="grid2">
-<div class="card"><h3>Quy định ghi trên itinerary</h3><ul><li>Mỗi người: 1 personal item đặt dưới ghế.</li><li>Mỗi người: 1 cabin bag, kích thước tối đa 56 x 36 x 23 cm.</li><li>Tổng personal item + cabin bag: tối đa 7 kg/người.</li><li>Nhóm JM2T2V: 20 kg ký gửi/người/chiều, kích thước kiện tối đa 119 x 119 x 81 cm.</li><li>Nhóm MU5S63: không có ký gửi miễn phí.</li></ul></div>
+<div class="card"><h3>Quy định ghi trên itinerary</h3><ul><li>Mỗi người: 1 personal item đặt dưới ghế.</li><li>Mỗi người: 1 cabin bag, kích thước tối đa 56 x 36 x 23 cm.</li><li>Tổng personal item + cabin bag: tối đa 7 kg/người.</li><li>Nhóm JM••2V: 20 kg ký gửi/người/chiều, kích thước kiện tối đa 119 x 119 x 81 cm.</li><li>Nhóm MU••63: không có ký gửi miễn phí.</li></ul></div>
 <div class="card"><h3>Cách chia đồ cho đoàn</h3><ul><li>Gắn từng vali ký gửi vào một trong 6 hành khách có 20 kg; không mặc định hãng cho cộng dồn cân giữa người.</li><li>Cân từng kiện trước khi rời nhà và trước chuyến về.</li><li>Hộ chiếu, thuốc, đồ điện tử, tiền, trang sức và giấy booking để trong xách tay.</li><li>Pin dự phòng/spare lithium battery để trong hành lý xách tay, không cho vào vali ký gửi; kiểm tra nhãn dung lượng và quy định VietJet trước giờ bay.</li><li>Chuẩn bị một túi nhỏ cho đêm Gubei; hạn chế kéo toàn bộ vali vào cổ trấn nếu THE YARD đồng ý giữ qua đêm.</li></ul></div>
 </div>
 <div class="alert red"><b>Xe 16 chỗ:</b> 11 người + nhiều vali có thể thiếu khoang hành lý. Khi đặt xe Bắc Kinh-Gubei-Bắc Kinh, gửi trước số vali và yêu cầu ảnh/Thông số khoang hành lý; có thể cần xe lớn hơn hoặc xe phụ.</div>
@@ -573,7 +767,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="day-head"><b>17/07 - Thứ Sáu: Hà Nội → Bắc Kinh</b></div>
 <div class="day-body">
 <ul class="timeline">
-<li><time>16:30</time>Có mặt Nội Bài T2; chia 2 nhóm booking MU5S63 và JM2T2V, kiểm tra hành lý theo tên.</li>
+<li><time>16:30</time>Có mặt Nội Bài T2; chia 2 nhóm booking MU••63 và JM••2V, kiểm tra hành lý theo tên.</li>
 <li><time>19:55</time>VJ7712 khởi hành.</li>
 <li><time>00:20</time>Đến PKX ngày 18/07.</li>
 <li><time>00:20-01:30</time>Nhập cảnh, lấy hành lý, tập trung đủ 11 người. Mở Trip.com để kiểm tra lại 3 xe, tài xế và biển số mới nhất.</li>
@@ -587,20 +781,22 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 </div>
 </div>
 <div class="day">
-<div class="day-head"><b>18/07 - Thứ Bảy: Cố Cung 13:00 → Qianmen/Dashilan</b></div>
+<div class="day-head"><b>19/07 - Chủ Nhật: Phủ Cung Vương / Phủ Hòa Thân → Shichahai/Houhai → Gubei</b></div>
 <div class="day-body">
 <ul class="timeline">
-<li><time>08:30-10:30</time>Ngủ bù sau chuyến bay đêm; ăn sáng muộn gần khách sạn vì THE YARD không gồm bữa sáng.</li>
-<li><time>10:30-11:30</time>Chuẩn bị hộ chiếu gốc đủ 11 người, nước uống, mũ/nón, pin dự phòng; không mang đồ cồng kềnh.</li>
-<li><time>11:30-12:15</time>Ăn trưa sớm gần Qianmen hoặc mua đồ ăn nhẹ trước khi đi.</li>
-<li><time>12:15-12:30</time>Di chuyển tới khu Cố Cung/điểm hẹn; mục tiêu có mặt sớm hơn giờ hẹn ít nhất 30 phút.</li>
-<li><time>13:00</time>Gặp tour/vào Cố Cung: gói E-suất 13 giờ + vé đặt trước + thuyết minh tiếng Anh theo tour ghép.</li>
-<li><time>13:00-16:30</time>Tham quan Cố Cung/Tử Cấm Thành theo luồng tour; mang hộ chiếu để đối chiếu danh sách khách.</li>
-<li><time>16:30-17:30</time>Ra khỏi Cố Cung, nghỉ nước. Nếu đoàn còn sức có thể đi Jingshan Park ngắm toàn cảnh Cố Cung; nếu mệt thì bỏ.</li>
-<li><time>18:00-20:30</time>Quay về Qianmen/Dashilan ăn tối và dạo nhẹ gần khách sạn.</li>
+<li><time>08:00-08:45</time>Ăn sáng, chuẩn bị đồ gọn cho ngày đi Gubei. Kiểm tra không để quên hộ chiếu/đồ quan trọng.</li>
+<li><time>08:45-09:15</time>Checkout THE YARD, gửi vali hoặc gom vali chờ xe riêng 14:00.</li>
+<li><time>09:15-09:45</time>Di chuyển tới Phủ Cung Vương / Prince Gong’s Palace Museum. Ưu tiên DiDi/taxi 2-3 xe để giảm đi bộ cho 11 người.</li>
+<li><time>09:45-11:45</time>Tham quan Phủ Cung Vương, thường gọi Phủ Hòa Thân: khu phủ, sân trong và vườn phía sau.</li>
+<li><time>11:45-12:45</time>Dạo nhẹ Shichahai/Houhai, ăn trưa nhanh gần hồ. Đây là khu Hậu Hải ở Bắc Kinh, không phải Nhĩ Hải ở Vân Nam.</li>
+<li><time>12:45-13:25</time>Quay về THE YARD/Qianmen lấy vali. Nếu đoàn mệt hoặc thời tiết nóng, bỏ dạo hồ và quay về khách sạn sớm.</li>
+<li><time>13:25-14:00</time>Chia nhóm lên xe, kiểm tra đủ 11 người + hành lý + voucher Junyue Inn.</li>
+<li><time>14:00</time>Xe riêng đi Gubei Water Town.</li>
+<li><time>16:30-17:00</time>Tới Gubei, check-in Junyue Inn, nhận quyền lợi vé vào khu + hot spring theo booking.</li>
+<li><time>Tối</time>Simatai Night Tour / dạo Gubei Water Town, nghỉ đêm Junyue Inn.</li>
 </ul>
-<div class="callout warn">
-<b>Thiên Đàn không nên cố nhét sau Cố Cung 13:00.</b> Nếu cả đoàn dậy khỏe, có thể đi Thiên Đàn rất sớm buổi sáng, nhưng phương án an toàn là giữ ngày 18 tập trung cho Cố Cung và chuyển Thiên Đàn sang slot linh hoạt ngày 22 nếu cần.
+<div class="callout">
+<b>Vì sao đổi hợp lý:</b> Phủ Cung Vương ở khu Qianhai/Shichahai, rất hợp để nối sang Houhai. Bỏ Bảo tàng Quốc gia giúp lịch sáng Chủ nhật đỡ nặng, ít quay đầu tuyến trước khi đi Gubei.
                 </div>
 </div>
 </div>
@@ -618,16 +814,25 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <li><time>17:00-19:00</time>Tham quan Gubei, ăn tối; dùng shuttle nội khu nếu cần.</li>
 <li><time>19:30-22:00</time>Simatai Night Tour sau khi đã mua vé riêng/áp dụng quyền giảm giá.</li>
 </ul></div></div>
-<div class="day"><div class="dayhead"><b>20/07 - Thứ Hai: Gubei → THE YARD → Pop Mart</b></div><div class="daybody"><ul class="timeline">
-<li><time>07:30</time>Ăn sáng tại Junyue Inn: voucher có 10 suất; xử lý suất thứ 11.</li>
-<li><time>08:30-10:00</time>Dạo Gubei, dùng voucher suối khoáng hoặc đi Simatai ban ngày chỉ khi giờ mở cửa/vé riêng đã được xác nhận. Không mặc định có thể lên Trường Thành lúc bình minh.</li>
-<li><time>10:30</time>Checkout, nhận lại hành lý nội khu.</li>
-<li><time>10:45-12:45</time>Xe về THE YARD.</li>
-<li><time>12:45</time>Gửi hành lý; phòng chỉ đảm bảo sau 14:00. Ăn trưa tại Qianmen/Dashilan.</li>
-<li><time>14:00</time>Nhận 4 phòng; kiểm tra đủ 11 khách đã đăng ký.</li>
-<li><time>15:00-18:00</time>Đi Pop Mart City Park/POPLAND bằng DiDi; xác nhận đúng cổng trên Amap trước khi gọi xe.</li>
-<li><time>19:30-21:30</time>Ăn vịt quay hoặc ăn tối gần Qianmen.</li>
-</ul></div></div>
+<div class="day">
+<div class="day-head"><b>20/07 - Thứ Hai: Gubei → POP LAND/SOLANA → THE YARD</b></div>
+<div class="day-body">
+<ul class="timeline">
+<li><time>08:00-09:00</time>Ăn sáng Junyue Inn, gom hành lý, kiểm tra đủ 11 người + voucher THE YARD 20-22/07.</li>
+<li><time>09:00-09:30</time>Checkout Junyue Inn. Xác nhận với bác tài điểm đến mới: <b>朝阳公园西3门 / POP LAND / 泡泡玛特城市乐园</b>.</li>
+<li><time>09:30-12:00</time>Xe riêng đi thẳng từ Gubei Water Town về khu Chaoyang Park / POP LAND / SOLANA. Không về THE YARD trước nếu bác tài đồng ý và xử lý được hành lý.</li>
+<li><time>12:00-12:30</time>Tới khu Chaoyang Park West Gate 3. Chia nhóm: nhóm trẻ em + người muốn vào POP LAND; nhóm người lớn qua SOLANA Blue Harbor nghỉ/chờ.</li>
+<li><time>12:30-15:30</time>Nhóm trẻ em vào POP LAND. Nhóm người lớn không vào POP LAND: nghỉ ở SOLANA Blue Harbor / 蓝色港湾, ăn trưa, café, mua đồ, đi dạo ven hồ nếu thời tiết tốt.</li>
+<li><time>15:30-16:00</time>Hẹn gặp lại ở cổng POP LAND hoặc SOLANA Central Plaza. Kiểm tra đủ người trước khi rời khu.</li>
+<li><time>16:00-17:15</time>Về THE YARD. Metro: Zaoying Line 14 → Jiulongshan đổi Line 7 → Zhushikou → đi bộ về khách sạn. Nếu còn vali hoặc đoàn mệt, gọi DiDi 2-3 xe.</li>
+<li><time>17:15-18:00</time>Check-in THE YARD, nhận phòng, nghỉ.</li>
+<li><time>Tối</time>Ăn tối gần Qianmen/Dashilan hoặc vịt quay Bắc Kinh nếu đoàn còn sức.</li>
+</ul>
+<div class="callout warn">
+<b>Điểm phải chốt trước:</b> hành lý. Nếu bác tài không chờ hoặc không thể giữ vali trong xe, nên ghé THE YARD thả vali trước rồi mới đi POP LAND/SOLANA. Không nên vừa tách nhóm vừa kéo nhiều vali.
+                </div>
+</div>
+</div>
 <div class="day"><div class="dayhead"><b>21/07 - Thứ Ba: Universal Beijing Resort</b></div><div class="daybody"><ul class="timeline">
 <li><time>06:45-07:15</time>Ăn sáng, mang đồ gọn, áo mưa mỏng, pin dự phòng trong xách tay.</li>
 <li><time>07:15-07:30</time>Đi bộ tới Zhushikou.</li>
@@ -666,9 +871,9 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <li><time>15:30-16:30</time>Quay về Qianmen/Zhushikou; nếu tách nhóm thì hẹn gặp lại tại THE YARD, không hẹn ở ga trung chuyển.</li>
 <li><time>16:30-18:30</time>Nghỉ cafe/mall hoặc dạo nhẹ Qianmen/Dashilan/Xianyukou.</li>
 <li><time>18:30-19:30</time>Ăn tối sớm gần khách sạn.</li>
-<li><time>19:30-20:15</time>Lấy vali, chia hành lý theo nhóm ký gửi JM2T2V và xách tay MU5S63; kiểm tra hộ chiếu + visa bản gốc đủ 11 người.</li>
+<li><time>19:30-20:15</time>Lấy vali, chia hành lý theo nhóm ký gửi JM••2V và xách tay MU••63; kiểm tra hộ chiếu + visa bản gốc đủ 11 người.</li>
 <li><time>20:30</time>Rời THE YARD đi PKX bằng DiDi/taxi đủ chỗ cho 11 người + hành lý.</li>
-<li><time>21:30-22:00</time>Có mặt PKX, làm thủ tục 2 booking, ký gửi hành lý nhóm JM2T2V.</li>
+<li><time>21:30-22:00</time>Có mặt PKX, làm thủ tục 2 booking, ký gửi hành lý nhóm JM••2V.</li>
 <li><time>01:20</time>VJ7713 khởi hành ngày 23/07.</li>
 <li><time>03:55</time>Đến Nội Bài T2.</li>
 </ul>
@@ -676,8 +881,8 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <b>Quyết định trong ngày:</b> trời mát và người lớn còn sức → Di Hòa Viên. Trời nóng/mưa hoặc trẻ mệt sau Universal → Beijing Zoo/Panda House. Cả hai cùng dùng trục Line 7 + Line 4 nên đổi phương án vẫn dễ.
         </div>
 <div class="callout">
-<b>Option C dự phòng:</b> nếu ngày 18 không đi được Thiên Đàn, có thể đổi ngày 22 thành Thiên Đàn + Qianmen nhẹ nhàng, thay cho Di Hòa Viên/Zoo.
-                </div></div>
+<b>Cập nhật:</b> Thiên Đàn đã đưa vào tối 18/07. Ngày 22 giữ đúng vai trò ngày linh hoạt: chọn Di Hòa Viên hoặc Beijing Zoo/Panda House, hoặc nghỉ nhẹ nếu đoàn mệt.
+                    </div></div>
 </div>
 </section>
 <section id="checkin">
@@ -803,105 +1008,105 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <td>1</td>
 <td><b>THUY TIEN NGUYEN</b></td>
 <td>05/03/2023</td>
-<td><span class="sensitive-value" data-full="P03366885" data-mask="P03•••885">P03•••885</span></td>
-<td><span class="sensitive-value" data-full="AH786367" data-mask="AH7•••367">AH7•••367</span></td>
-<td>MU5S63</td>
+<td><span class="sensitive-value" data-full="P03•••885" data-mask="P03•••885">P03•••885</span></td>
+<td><span class="sensitive-value" data-full="AH7•••367" data-mask="AH7•••367">AH7•••367</span></td>
+<td>MU••63</td>
 <td class="match-ok">✓ Khớp</td>
 </tr>
 <tr>
 <td>2</td>
 <td><b>NGUYEN HA PHUONG VU</b></td>
 <td>09/01/2013</td>
-<td><span class="sensitive-value" data-full="P04133875" data-mask="P04•••875">P04•••875</span></td>
-<td><span class="sensitive-value" data-full="AH786455" data-mask="AH7•••455">AH7•••455</span></td>
-<td>MU5S63</td>
+<td><span class="sensitive-value" data-full="P04•••875" data-mask="P04•••875">P04•••875</span></td>
+<td><span class="sensitive-value" data-full="AH7•••455" data-mask="AH7•••455">AH7•••455</span></td>
+<td>MU••63</td>
 <td class="match-ok">✓ Khớp</td>
 </tr>
 <tr>
 <td>3</td>
 <td><b>MINH SON VU</b></td>
 <td>17/12/2008</td>
-<td><span class="sensitive-value" data-full="E05148082" data-mask="E05•••082">E05•••082</span></td>
-<td><span class="sensitive-value" data-full="AH786174" data-mask="AH7•••174">AH7•••174</span></td>
-<td>MU5S63</td>
+<td><span class="sensitive-value" data-full="E05•••082" data-mask="E05•••082">E05•••082</span></td>
+<td><span class="sensitive-value" data-full="AH7•••174" data-mask="AH7•••174">AH7•••174</span></td>
+<td>MU••63</td>
 <td class="match-ok">✓ Khớp</td>
 </tr>
 <tr>
 <td>4</td>
 <td><b>TU CUONG VU</b></td>
 <td>02/09/1981</td>
-<td><span class="sensitive-value" data-full="E00600502" data-mask="E00•••502">E00•••502</span></td>
-<td><span class="sensitive-value" data-full="AH786529" data-mask="AH7•••529">AH7•••529</span></td>
-<td>MU5S63</td>
+<td><span class="sensitive-value" data-full="E00•••502" data-mask="E00•••502">E00•••502</span></td>
+<td><span class="sensitive-value" data-full="AH7•••529" data-mask="AH7•••529">AH7•••529</span></td>
+<td>MU••63</td>
 <td class="match-ok">✓ Khớp</td>
 </tr>
 <tr>
 <td>5</td>
 <td><b>THI THU HA NGUYEN</b></td>
 <td>13/12/1983</td>
-<td><span class="sensitive-value" data-full="E02718051" data-mask="E02•••051">E02•••051</span></td>
-<td><span class="sensitive-value" data-full="AH786328" data-mask="AH7•••328">AH7•••328</span></td>
-<td>MU5S63</td>
+<td><span class="sensitive-value" data-full="E02•••051" data-mask="E02•••051">E02•••051</span></td>
+<td><span class="sensitive-value" data-full="AH7•••328" data-mask="AH7•••328">AH7•••328</span></td>
+<td>MU••63</td>
 <td class="match-ok">✓ Khớp</td>
 </tr>
 <tr>
 <td>6</td>
 <td><b>TRONG DUC NGUYEN</b></td>
 <td>19/05/2018</td>
-<td><span class="sensitive-value" data-full="P03366883" data-mask="P03•••883">P03•••883</span></td>
-<td><span class="sensitive-value" data-full="AH786456" data-mask="AH7•••456">AH7•••456</span></td>
-<td>JM2T2V</td>
+<td><span class="sensitive-value" data-full="P03•••883" data-mask="P03•••883">P03•••883</span></td>
+<td><span class="sensitive-value" data-full="AH7•••456" data-mask="AH7•••456">AH7•••456</span></td>
+<td>JM••2V</td>
 <td class="match-ok">✓ Khớp</td>
 </tr>
 <tr>
 <td>7</td>
 <td><b>LINH DAN NGUYEN</b></td>
 <td>16/10/2016</td>
-<td><span class="sensitive-value" data-full="P03366884" data-mask="P03•••884">P03•••884</span></td>
-<td><span class="sensitive-value" data-full="AH786457" data-mask="AH7•••457">AH7•••457</span></td>
-<td>JM2T2V</td>
+<td><span class="sensitive-value" data-full="P03•••884" data-mask="P03•••884">P03•••884</span></td>
+<td><span class="sensitive-value" data-full="AH7•••457" data-mask="AH7•••457">AH7•••457</span></td>
+<td>JM••2V</td>
 <td class="match-ok">✓ Khớp</td>
 </tr>
 <tr>
 <td>8</td>
 <td><b>TRONG HIEU NGUYEN</b></td>
 <td>02/12/1988</td>
-<td><span class="sensitive-value" data-full="C3669219" data-mask="C36•••219">C36•••219</span></td>
-<td><span class="sensitive-value" data-full="AH786459" data-mask="AH7•••459">AH7•••459</span></td>
-<td>JM2T2V</td>
+<td><span class="sensitive-value" data-full="C36•••219" data-mask="C36•••219">C36•••219</span></td>
+<td><span class="sensitive-value" data-full="AH7•••459" data-mask="AH7•••459">AH7•••459</span></td>
+<td>JM••2V</td>
 <td class="match-ok">✓ Khớp</td>
 </tr>
 <tr>
 <td>9</td>
 <td><b>XUAN HIEP NGUYEN</b></td>
 <td>10/10/1967</td>
-<td><span class="sensitive-value" data-full="E01839667" data-mask="E01•••667">E01•••667</span></td>
-<td><span class="sensitive-value" data-full="AH786327" data-mask="AH7•••327">AH7•••327</span></td>
-<td>JM2T2V</td>
+<td><span class="sensitive-value" data-full="E01•••667" data-mask="E01•••667">E01•••667</span></td>
+<td><span class="sensitive-value" data-full="AH7•••327" data-mask="AH7•••327">AH7•••327</span></td>
+<td>JM••2V</td>
 <td class="match-ok">✓ Khớp</td>
 </tr>
 <tr>
 <td>10</td>
 <td><b>THI TINH LE</b></td>
 <td>21/01/1968</td>
-<td><span class="sensitive-value" data-full="E01839665" data-mask="E01•••665">E01•••665</span></td>
-<td><span class="sensitive-value" data-full="AH786326" data-mask="AH7•••326">AH7•••326</span></td>
-<td>JM2T2V</td>
+<td><span class="sensitive-value" data-full="E01•••665" data-mask="E01•••665">E01•••665</span></td>
+<td><span class="sensitive-value" data-full="AH7•••326" data-mask="AH7•••326">AH7•••326</span></td>
+<td>JM••2V</td>
 <td class="match-ok">✓ Khớp</td>
 </tr>
 <tr>
 <td>11</td>
 <td><b>THI HUE NGUYEN</b></td>
 <td>25/12/1990</td>
-<td><span class="sensitive-value" data-full="E01789414" data-mask="E01•••414">E01•••414</span></td>
-<td><span class="sensitive-value" data-full="AH786458" data-mask="AH7•••458">AH7•••458</span></td>
-<td>JM2T2V</td>
+<td><span class="sensitive-value" data-full="E01•••414" data-mask="E01•••414">E01•••414</span></td>
+<td><span class="sensitive-value" data-full="AH7•••458" data-mask="AH7•••458">AH7•••458</span></td>
+<td>JM••2V</td>
 <td class="match-ok">✓ Khớp</td>
 </tr>
 </tbody>
 </table>
 <div class="callout warn">
-<b>Lưu ý về số hộ chiếu của TRONG HIEU NGUYEN:</b> số đúng là <b>C3669219</b>.
+<b>Lưu ý về số hộ chiếu của TRONG HIEU NGUYEN:</b> số đúng là <b>C36•••219</b>.
     Ký tự “4” xuất hiện sau số này trong dòng MRZ là check digit, không thuộc số hộ chiếu.
   </div>
 </section><section id="arrival-cards">
@@ -914,7 +1119,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <article class="arrival-card">
 <div class="arrival-card-head">
 <h3>1. THUY TIEN NGUYEN</h3>
-<span>Booking ref: MU5S63 · Prefill reference</span>
+<span>Booking ref: MU••63 · Prefill reference</span>
 </div>
 <div class="arrival-card-body">
 <div class="arrival-grid">
@@ -947,11 +1152,11 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Passport No. / 旅行证件号码</span>
-<span class="arrival-value sensitive-value" data-full="P03366885" data-mask="P03•••885">P03•••885</span>
+<span class="arrival-value sensitive-value" data-full="P03•••885" data-mask="P03•••885">P03•••885</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Visa No. / 签证号码</span>
-<span class="arrival-value sensitive-value" data-full="AH786367" data-mask="AH7•••367">AH7•••367</span>
+<span class="arrival-value sensitive-value" data-full="AH7•••367" data-mask="AH7•••367">AH7•••367</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Arrival Flight / 抵达航班</span>
@@ -977,7 +1182,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="arrival-field full">
 <span class="arrival-label">Detailed address or hotel name while in China / 在华住址或旅馆名称</span>
 <span class="arrival-value">THE YARD HOTEL BEIJING, QIANMEN AVENUE, NO. 143 QIANMEN STREET, DONGCHENG DISTRICT, BEIJING, CHINA</span><br/>
-<span class="small">Hotel phone: +86-10-59006499-0 / +86-10-59006495-0</span>
+<span class="small">Hotel phone: +86-10-5900•••• / +86-10-5900••••</span>
 </div>
 </div>
 <div class="arrival-questions">
@@ -1010,7 +1215,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <article class="arrival-card">
 <div class="arrival-card-head">
 <h3>2. NGUYEN HA PHUONG VU</h3>
-<span>Booking ref: MU5S63 · Prefill reference</span>
+<span>Booking ref: MU••63 · Prefill reference</span>
 </div>
 <div class="arrival-card-body">
 <div class="arrival-grid">
@@ -1043,11 +1248,11 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Passport No. / 旅行证件号码</span>
-<span class="arrival-value sensitive-value" data-full="P04133875" data-mask="P04•••875">P04•••875</span>
+<span class="arrival-value sensitive-value" data-full="P04•••875" data-mask="P04•••875">P04•••875</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Visa No. / 签证号码</span>
-<span class="arrival-value sensitive-value" data-full="AH786455" data-mask="AH7•••455">AH7•••455</span>
+<span class="arrival-value sensitive-value" data-full="AH7•••455" data-mask="AH7•••455">AH7•••455</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Arrival Flight / 抵达航班</span>
@@ -1073,7 +1278,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="arrival-field full">
 <span class="arrival-label">Detailed address or hotel name while in China / 在华住址或旅馆名称</span>
 <span class="arrival-value">THE YARD HOTEL BEIJING, QIANMEN AVENUE, NO. 143 QIANMEN STREET, DONGCHENG DISTRICT, BEIJING, CHINA</span><br/>
-<span class="small">Hotel phone: +86-10-59006499-0 / +86-10-59006495-0</span>
+<span class="small">Hotel phone: +86-10-5900•••• / +86-10-5900••••</span>
 </div>
 </div>
 <div class="arrival-questions">
@@ -1106,7 +1311,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <article class="arrival-card">
 <div class="arrival-card-head">
 <h3>3. MINH SON VU</h3>
-<span>Booking ref: MU5S63 · Prefill reference</span>
+<span>Booking ref: MU••63 · Prefill reference</span>
 </div>
 <div class="arrival-card-body">
 <div class="arrival-grid">
@@ -1139,11 +1344,11 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Passport No. / 旅行证件号码</span>
-<span class="arrival-value sensitive-value" data-full="E05148082" data-mask="E05•••082">E05•••082</span>
+<span class="arrival-value sensitive-value" data-full="E05•••082" data-mask="E05•••082">E05•••082</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Visa No. / 签证号码</span>
-<span class="arrival-value sensitive-value" data-full="AH786174" data-mask="AH7•••174">AH7•••174</span>
+<span class="arrival-value sensitive-value" data-full="AH7•••174" data-mask="AH7•••174">AH7•••174</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Arrival Flight / 抵达航班</span>
@@ -1169,7 +1374,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="arrival-field full">
 <span class="arrival-label">Detailed address or hotel name while in China / 在华住址或旅馆名称</span>
 <span class="arrival-value">THE YARD HOTEL BEIJING, QIANMEN AVENUE, NO. 143 QIANMEN STREET, DONGCHENG DISTRICT, BEIJING, CHINA</span><br/>
-<span class="small">Hotel phone: +86-10-59006499-0 / +86-10-59006495-0</span>
+<span class="small">Hotel phone: +86-10-5900•••• / +86-10-5900••••</span>
 </div>
 </div>
 <div class="arrival-questions">
@@ -1202,7 +1407,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <article class="arrival-card">
 <div class="arrival-card-head">
 <h3>4. TU CUONG VU</h3>
-<span>Booking ref: MU5S63 · Prefill reference</span>
+<span>Booking ref: MU••63 · Prefill reference</span>
 </div>
 <div class="arrival-card-body">
 <div class="arrival-grid">
@@ -1235,11 +1440,11 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Passport No. / 旅行证件号码</span>
-<span class="arrival-value sensitive-value" data-full="E00600502" data-mask="E00•••502">E00•••502</span>
+<span class="arrival-value sensitive-value" data-full="E00•••502" data-mask="E00•••502">E00•••502</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Visa No. / 签证号码</span>
-<span class="arrival-value sensitive-value" data-full="AH786529" data-mask="AH7•••529">AH7•••529</span>
+<span class="arrival-value sensitive-value" data-full="AH7•••529" data-mask="AH7•••529">AH7•••529</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Arrival Flight / 抵达航班</span>
@@ -1265,7 +1470,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="arrival-field full">
 <span class="arrival-label">Detailed address or hotel name while in China / 在华住址或旅馆名称</span>
 <span class="arrival-value">THE YARD HOTEL BEIJING, QIANMEN AVENUE, NO. 143 QIANMEN STREET, DONGCHENG DISTRICT, BEIJING, CHINA</span><br/>
-<span class="small">Hotel phone: +86-10-59006499-0 / +86-10-59006495-0</span>
+<span class="small">Hotel phone: +86-10-5900•••• / +86-10-5900••••</span>
 </div>
 </div>
 <div class="arrival-questions">
@@ -1298,7 +1503,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <article class="arrival-card">
 <div class="arrival-card-head">
 <h3>5. THI THU HA NGUYEN</h3>
-<span>Booking ref: MU5S63 · Prefill reference</span>
+<span>Booking ref: MU••63 · Prefill reference</span>
 </div>
 <div class="arrival-card-body">
 <div class="arrival-grid">
@@ -1331,11 +1536,11 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Passport No. / 旅行证件号码</span>
-<span class="arrival-value sensitive-value" data-full="E02718051" data-mask="E02•••051">E02•••051</span>
+<span class="arrival-value sensitive-value" data-full="E02•••051" data-mask="E02•••051">E02•••051</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Visa No. / 签证号码</span>
-<span class="arrival-value sensitive-value" data-full="AH786328" data-mask="AH7•••328">AH7•••328</span>
+<span class="arrival-value sensitive-value" data-full="AH7•••328" data-mask="AH7•••328">AH7•••328</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Arrival Flight / 抵达航班</span>
@@ -1361,7 +1566,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="arrival-field full">
 <span class="arrival-label">Detailed address or hotel name while in China / 在华住址或旅馆名称</span>
 <span class="arrival-value">THE YARD HOTEL BEIJING, QIANMEN AVENUE, NO. 143 QIANMEN STREET, DONGCHENG DISTRICT, BEIJING, CHINA</span><br/>
-<span class="small">Hotel phone: +86-10-59006499-0 / +86-10-59006495-0</span>
+<span class="small">Hotel phone: +86-10-5900•••• / +86-10-5900••••</span>
 </div>
 </div>
 <div class="arrival-questions">
@@ -1394,7 +1599,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <article class="arrival-card">
 <div class="arrival-card-head">
 <h3>6. TRONG DUC NGUYEN</h3>
-<span>Booking ref: JM2T2V · Prefill reference</span>
+<span>Booking ref: JM••2V · Prefill reference</span>
 </div>
 <div class="arrival-card-body">
 <div class="arrival-grid">
@@ -1427,11 +1632,11 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Passport No. / 旅行证件号码</span>
-<span class="arrival-value sensitive-value" data-full="P03366883" data-mask="P03•••883">P03•••883</span>
+<span class="arrival-value sensitive-value" data-full="P03•••883" data-mask="P03•••883">P03•••883</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Visa No. / 签证号码</span>
-<span class="arrival-value sensitive-value" data-full="AH786456" data-mask="AH7•••456">AH7•••456</span>
+<span class="arrival-value sensitive-value" data-full="AH7•••456" data-mask="AH7•••456">AH7•••456</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Arrival Flight / 抵达航班</span>
@@ -1457,7 +1662,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="arrival-field full">
 <span class="arrival-label">Detailed address or hotel name while in China / 在华住址或旅馆名称</span>
 <span class="arrival-value">THE YARD HOTEL BEIJING, QIANMEN AVENUE, NO. 143 QIANMEN STREET, DONGCHENG DISTRICT, BEIJING, CHINA</span><br/>
-<span class="small">Hotel phone: +86-10-59006499-0 / +86-10-59006495-0</span>
+<span class="small">Hotel phone: +86-10-5900•••• / +86-10-5900••••</span>
 </div>
 </div>
 <div class="arrival-questions">
@@ -1490,7 +1695,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <article class="arrival-card">
 <div class="arrival-card-head">
 <h3>7. LINH DAN NGUYEN</h3>
-<span>Booking ref: JM2T2V · Prefill reference</span>
+<span>Booking ref: JM••2V · Prefill reference</span>
 </div>
 <div class="arrival-card-body">
 <div class="arrival-grid">
@@ -1523,11 +1728,11 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Passport No. / 旅行证件号码</span>
-<span class="arrival-value sensitive-value" data-full="P03366884" data-mask="P03•••884">P03•••884</span>
+<span class="arrival-value sensitive-value" data-full="P03•••884" data-mask="P03•••884">P03•••884</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Visa No. / 签证号码</span>
-<span class="arrival-value sensitive-value" data-full="AH786457" data-mask="AH7•••457">AH7•••457</span>
+<span class="arrival-value sensitive-value" data-full="AH7•••457" data-mask="AH7•••457">AH7•••457</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Arrival Flight / 抵达航班</span>
@@ -1553,7 +1758,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="arrival-field full">
 <span class="arrival-label">Detailed address or hotel name while in China / 在华住址或旅馆名称</span>
 <span class="arrival-value">THE YARD HOTEL BEIJING, QIANMEN AVENUE, NO. 143 QIANMEN STREET, DONGCHENG DISTRICT, BEIJING, CHINA</span><br/>
-<span class="small">Hotel phone: +86-10-59006499-0 / +86-10-59006495-0</span>
+<span class="small">Hotel phone: +86-10-5900•••• / +86-10-5900••••</span>
 </div>
 </div>
 <div class="arrival-questions">
@@ -1586,7 +1791,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <article class="arrival-card">
 <div class="arrival-card-head">
 <h3>8. TRONG HIEU NGUYEN</h3>
-<span>Booking ref: JM2T2V · Prefill reference</span>
+<span>Booking ref: JM••2V · Prefill reference</span>
 </div>
 <div class="arrival-card-body">
 <div class="arrival-grid">
@@ -1619,11 +1824,11 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Passport No. / 旅行证件号码</span>
-<span class="arrival-value sensitive-value" data-full="C3669219" data-mask="C36•••219">C36•••219</span>
+<span class="arrival-value sensitive-value" data-full="C36•••219" data-mask="C36•••219">C36•••219</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Visa No. / 签证号码</span>
-<span class="arrival-value sensitive-value" data-full="AH786459" data-mask="AH7•••459">AH7•••459</span>
+<span class="arrival-value sensitive-value" data-full="AH7•••459" data-mask="AH7•••459">AH7•••459</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Arrival Flight / 抵达航班</span>
@@ -1649,7 +1854,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="arrival-field full">
 <span class="arrival-label">Detailed address or hotel name while in China / 在华住址或旅馆名称</span>
 <span class="arrival-value">THE YARD HOTEL BEIJING, QIANMEN AVENUE, NO. 143 QIANMEN STREET, DONGCHENG DISTRICT, BEIJING, CHINA</span><br/>
-<span class="small">Hotel phone: +86-10-59006499-0 / +86-10-59006495-0</span>
+<span class="small">Hotel phone: +86-10-5900•••• / +86-10-5900••••</span>
 </div>
 </div>
 <div class="arrival-questions">
@@ -1682,7 +1887,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <article class="arrival-card">
 <div class="arrival-card-head">
 <h3>9. XUAN HIEP NGUYEN</h3>
-<span>Booking ref: JM2T2V · Prefill reference</span>
+<span>Booking ref: JM••2V · Prefill reference</span>
 </div>
 <div class="arrival-card-body">
 <div class="arrival-grid">
@@ -1715,11 +1920,11 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Passport No. / 旅行证件号码</span>
-<span class="arrival-value sensitive-value" data-full="E01839667" data-mask="E01•••667">E01•••667</span>
+<span class="arrival-value sensitive-value" data-full="E01•••667" data-mask="E01•••667">E01•••667</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Visa No. / 签证号码</span>
-<span class="arrival-value sensitive-value" data-full="AH786327" data-mask="AH7•••327">AH7•••327</span>
+<span class="arrival-value sensitive-value" data-full="AH7•••327" data-mask="AH7•••327">AH7•••327</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Arrival Flight / 抵达航班</span>
@@ -1745,7 +1950,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="arrival-field full">
 <span class="arrival-label">Detailed address or hotel name while in China / 在华住址或旅馆名称</span>
 <span class="arrival-value">THE YARD HOTEL BEIJING, QIANMEN AVENUE, NO. 143 QIANMEN STREET, DONGCHENG DISTRICT, BEIJING, CHINA</span><br/>
-<span class="small">Hotel phone: +86-10-59006499-0 / +86-10-59006495-0</span>
+<span class="small">Hotel phone: +86-10-5900•••• / +86-10-5900••••</span>
 </div>
 </div>
 <div class="arrival-questions">
@@ -1778,7 +1983,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <article class="arrival-card">
 <div class="arrival-card-head">
 <h3>10. THI TINH LE</h3>
-<span>Booking ref: JM2T2V · Prefill reference</span>
+<span>Booking ref: JM••2V · Prefill reference</span>
 </div>
 <div class="arrival-card-body">
 <div class="arrival-grid">
@@ -1811,11 +2016,11 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Passport No. / 旅行证件号码</span>
-<span class="arrival-value sensitive-value" data-full="E01839665" data-mask="E01•••665">E01•••665</span>
+<span class="arrival-value sensitive-value" data-full="E01•••665" data-mask="E01•••665">E01•••665</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Visa No. / 签证号码</span>
-<span class="arrival-value sensitive-value" data-full="AH786326" data-mask="AH7•••326">AH7•••326</span>
+<span class="arrival-value sensitive-value" data-full="AH7•••326" data-mask="AH7•••326">AH7•••326</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Arrival Flight / 抵达航班</span>
@@ -1841,7 +2046,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="arrival-field full">
 <span class="arrival-label">Detailed address or hotel name while in China / 在华住址或旅馆名称</span>
 <span class="arrival-value">THE YARD HOTEL BEIJING, QIANMEN AVENUE, NO. 143 QIANMEN STREET, DONGCHENG DISTRICT, BEIJING, CHINA</span><br/>
-<span class="small">Hotel phone: +86-10-59006499-0 / +86-10-59006495-0</span>
+<span class="small">Hotel phone: +86-10-5900•••• / +86-10-5900••••</span>
 </div>
 </div>
 <div class="arrival-questions">
@@ -1874,7 +2079,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <article class="arrival-card">
 <div class="arrival-card-head">
 <h3>11. THI HUE NGUYEN</h3>
-<span>Booking ref: JM2T2V · Prefill reference</span>
+<span>Booking ref: JM••2V · Prefill reference</span>
 </div>
 <div class="arrival-card-body">
 <div class="arrival-grid">
@@ -1907,11 +2112,11 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Passport No. / 旅行证件号码</span>
-<span class="arrival-value sensitive-value" data-full="E01789414" data-mask="E01•••414">E01•••414</span>
+<span class="arrival-value sensitive-value" data-full="E01•••414" data-mask="E01•••414">E01•••414</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Visa No. / 签证号码</span>
-<span class="arrival-value sensitive-value" data-full="AH786458" data-mask="AH7•••458">AH7•••458</span>
+<span class="arrival-value sensitive-value" data-full="AH7•••458" data-mask="AH7•••458">AH7•••458</span>
 </div>
 <div class="arrival-field">
 <span class="arrival-label">Arrival Flight / 抵达航班</span>
@@ -1937,7 +2142,7 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="arrival-field full">
 <span class="arrival-label">Detailed address or hotel name while in China / 在华住址或旅馆名称</span>
 <span class="arrival-value">THE YARD HOTEL BEIJING, QIANMEN AVENUE, NO. 143 QIANMEN STREET, DONGCHENG DISTRICT, BEIJING, CHINA</span><br/>
-<span class="small">Hotel phone: +86-10-59006499-0 / +86-10-59006495-0</span>
+<span class="small">Hotel phone: +86-10-5900•••• / +86-10-5900••••</span>
 </div>
 </div>
 <div class="arrival-questions">
@@ -1973,12 +2178,52 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="card"><h3>Hành lý</h3><label><input type="checkbox"/>Đánh dấu 6 người có 20 kg</label><label><input type="checkbox"/>Cân từng vali dưới 20 kg</label><label><input type="checkbox"/>Cabin + personal item dưới 7 kg/người</label><label><input type="checkbox"/>Pin dự phòng ở xách tay</label><label><input type="checkbox"/>Túi nhỏ riêng cho Gubei</label></div>
 <div class="card"><h3>Giấy tờ</h3><label><input type="checkbox"/>11 hộ chiếu + visa</label><label><input type="checkbox"/>Danh sách 11 tên theo hộ chiếu</label><label><input type="checkbox"/>Voucher lưu offline</label><label><input type="checkbox"/>Địa chỉ khách sạn tiếng Trung</label><label><input type="checkbox"/>Bản sao hộ chiếu lưu riêng</label></div>
 </div></section>
-<section id="sources"><h2>14. Đối chiếu nguồn PDF</h2>
+
+<section id="trip-report">
+<h2>14. Travel Report &amp; nhật ký chuyến đi</h2>
+<div class="report-hero">
+  <h3>🇨🇳 Beijing Trip 2026 — Final Report</h3>
+  <p><b>17/07/2026 tối → 23/07/2026 sáng</b> · 11 travellers · Hà Nội ⇄ Beijing Daxing · Qianmen, Gubei Water Town, POP LAND/SOLANA và Universal Beijing.</p>
+  <div class="report-stats">
+    <div><span>Tổng chi quy đổi</span><b>218.927.275đ</b></div>
+    <div><span>Bình quân</span><b>19.902.480đ/người</b></div>
+    <div><span>Khách sạn</span><b>THE YARD + Junyue Inn</b></div>
+    <div><span>Điểm nhấn</span><b>Universal + Gubei</b></div>
+  </div>
+</div>
+<div class="memory-grid">
+  <div class="memory-card"><h4>✈️ Di chuyển</h4><p>Hai booking VietJet VJ7712/VJ7713, vào PKX rạng sáng và về bằng chuyến 01:20. Nhóm JM••2V có 20 kg ký gửi/người; nhóm MU••63 không có ký gửi miễn phí.</p></div>
+  <div class="memory-card"><h4>🏨 Lưu trú</h4><p>THE YARD ở Qianmen là điểm neo chính để đi metro Line 7/8. Một đêm Junyue Inn giúp cả đoàn ngủ trong Gubei Water Town và có thời gian dạo tối.</p></div>
+  <div class="memory-card"><h4>🏯 Văn hoá</h4><p>Cố Cung đặt tour 13:00 ngày 18/07. Lịch v11 đã thêm Phủ Cung Vương/Houhai và phương án Thiên Đàn buổi tối để tối ưu tuyến.</p></div>
+  <div class="memory-card"><h4>🎢 Universal</h4><p>Ngày 21/07 dành cho Universal Beijing Resort. Vé đã dùng gồm 2 vé người lớn và 3 gói gia đình, tổng 1.042,34 USD, quy đổi 27.100.840đ.</p></div>
+  <div class="memory-card"><h4>🧸 POP LAND / SOLANA</h4><p>Ngày 20 đi thẳng từ Gubei về khu Chaoyang Park: nhóm trẻ vào POP LAND, người lớn chờ ở SOLANA Blue Harbor. Lưu ý chính là xử lý vali.</p></div>
+  <div class="memory-card"><h4>🛂 Visa</h4><p>Phí visa thực tế 2.300.000đ/người, tổng 11 người là 25.300.000đ, đã cộng vào quyết toán final.</p></div>
+  <div class="memory-card"><h4>💳 Chi tiêu ngoài</h4><p>Khoản chi Alipay tổng hợp khoảng 9.000 CNY, quy đổi 32.400.000đ, gồm ăn uống, mua sắm và chi phí phát sinh trong chuyến đi.</p></div>
+</div>
+<h3>📷 Album ảnh để bổ sung sau</h3>
+<div class="album-grid">
+  <div class="album-slot">17/07<br/>Hà Nội → PKX</div>
+  <div class="album-slot">18/07<br/>Cố Cung / Thiên Đàn</div>
+  <div class="album-slot">19/07<br/>Phủ Cung Vương / Gubei</div>
+  <div class="album-slot">20/07<br/>Gubei / POP LAND</div>
+  <div class="album-slot">21/07<br/>Universal Beijing</div>
+  <div class="album-slot">22/07<br/>Qianmen / PKX</div>
+  <div class="album-slot">Ăn uống<br/>Grilled fish / hotpot</div>
+  <div class="album-slot">Shopping<br/>Quà mang về</div>
+</div>
+<div class="closing-card"><b>🇨🇳 Beijing Trip 2026</b><br/>17 Jul 2026 → 23 Jul 2026 · 11 Travellers · Memories Forever ❤️</div>
+</section>
+
+<section id="sources"><h2>15. Đối chiếu nguồn PDF & dữ liệu bổ sung</h2>
 <table><thead><tr><th>File</th><th>Nội dung đã dùng</th><th>Ghi chú</th></tr></thead><tbody>
-<tr><td>Biên lai điện tử (bao gồm phiên bản tiếng Anh).pdf</td><td>Receipt nhóm MU5S63: 5 khách, tổng 37.698.794đ</td><td>VJ7712 + VJ7713</td></tr>
-<tr><td>Hành trình điện tử (phiên bản chỉ có tiếng Anh).pdf</td><td>Giờ bay, tên 5 khách, 7 kg cabin, không ký gửi</td><td>Booking 1669109038246065</td></tr>
-<tr><td>E-receipt.pdf</td><td>Receipt nhóm JM2T2V: 6 khách, tổng 48.880.000đ</td><td>Thanh toán Visa</td></tr>
-<tr><td>E-itinerary.pdf</td><td>Giờ bay, tên 6 khách, mỗi người 20 kg ký gửi, 7 kg cabin, khuyến nghị tới sân bay trước 3 giờ</td><td>Booking 1669109035160433</td></tr>
+<tr><td>Ảnh chụp Trip.com Universal #1</td><td>Vé Universal Beijing Resort người lớn x 2, tổng 198,62 USD</td><td>Bổ sung sau v11, quy đổi 26.000đ/USD</td></tr>
+<tr><td>Ảnh chụp Trip.com Universal #2</td><td>Gói gia đình Universal Beijing Resort x 3, tổng 843,72 USD</td><td>Bổ sung sau v11, quy đổi 26.000đ/USD</td></tr>
+<tr><td>Phí visa do người phụ trách cung cấp</td><td>2.300.000đ/người x 11 người = 25.300.000đ</td><td>Bổ sung sau v13; chỉnh lại v15 theo thực tế</td></tr>
+<tr><td>Tổng hợp Alipay do người phụ trách cung cấp</td><td>Chi tiêu ngoài khoảng 9.000 CNY</td><td>Bổ sung sau v11, quy đổi 3.600đ/CNY</td></tr>
+<tr><td>Biên lai điện tử (bao gồm phiên bản tiếng Anh).pdf</td><td>Receipt nhóm MU••63: 5 khách, tổng 37.698.794đ</td><td>VJ7712 + VJ7713</td></tr>
+<tr><td>Hành trình điện tử (phiên bản chỉ có tiếng Anh).pdf</td><td>Giờ bay, tên 5 khách, 7 kg cabin, không ký gửi</td><td>Booking 166••••••6065</td></tr>
+<tr><td>E-receipt.pdf</td><td>Receipt nhóm JM••2V: 6 khách, tổng 48.880.000đ</td><td>Thanh toán Visa</td></tr>
+<tr><td>E-itinerary.pdf</td><td>Giờ bay, tên 6 khách, mỗi người 20 kg ký gửi, 7 kg cabin, khuyến nghị tới sân bay trước 3 giờ</td><td>Booking 166••••••0433</td></tr>
 <tr><td>English check-in voucher (for visa application) (3).pdf</td><td>THE YARD 17-19/07: 4 phòng, giờ phòng, địa chỉ, voucher 15.475.568đ</td><td>Không gồm bữa sáng</td></tr>
 <tr><td>Hotel Booking E-receipt.pdf</td><td>THE YARD 17-19/07: thực trả thẻ 15.322.704đ sau Trip Coins</td><td>Nguồn ngân sách chính</td></tr>
 <tr><td>English check-in voucher (for visa application).pdf</td><td>Junyue booking 5593921, 2 khách, 2.903.554đ</td><td>Water-view double balcony</td></tr>
@@ -1990,45 +2235,77 @@ details{border:1px solid var(--line);border-radius:12px;margin:10px 0;background
 <div class="source"><b>Quy tắc dữ liệu:</b> số tiền “thực trả” chỉ lấy từ receipt hoặc trạng thái Paid trên voucher; file trùng không cộng lặp. Các PIN và phần số thẻ đã bị loại bỏ. Các thời gian di chuyển trong thành phố là ước tính có buffer, cần kiểm tra bản đồ và giờ vận hành thực tế trong ngày.</div>
 </section>
 </div></main>
-<footer>Verified v7 — thêm booking Cố Cung/Tử Cấm Thành ngày 18/07 lúc 13:00, điều chỉnh lịch ngày 18 và cập nhật tổng chi phí. Dữ liệu hộ chiếu/visa được che mặc định.</footer>
+<footer>Public masked build v15 — cập nhật final chi phí Universal + visa 2.300.000đ/người + Alipay, dashboard thanh toán, Travel Report, xuất Excel và dark mode. Dữ liệu nhạy cảm vẫn được che.</footer>
 </article>
-<script>
-const key='beijing-gubei-verified-v2'; const editable=document.getElementById('editable');
-function toggleEdit(){const on=editable.getAttribute('contenteditable')==='true';editable.setAttribute('contenteditable',on?'false':'true');document.body.classList.toggle('editing',!on);if(!on)editable.focus()}
-function saveDraft(){localStorage.setItem(key,editable.innerHTML);alert('Đã lưu bản nháp trên trình duyệt này.')}
-function loadDraft(){const s=localStorage.getItem(key);if(!s){alert('Chưa có bản nháp.');return}if(confirm('Mở bản nháp và thay nội dung hiện tại?'))editable.innerHTML=s}
-function downloadHtml(){const clone=document.documentElement.cloneNode(true);clone.querySelector('#editable').setAttribute('contenteditable','false');clone.querySelector('body').classList.remove('editing');const blob=new Blob(['<!doctype html>\n'+clone.outerHTML],{type:'text/html;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='Ke_hoach_Bac_Kinh_Gubei_2026_verified_v2.html';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
-
-    function toggleSensitive(){
-      const showing = document.body.classList.toggle("show-sensitive");
-      document.querySelectorAll(".sensitive-value").forEach(el => {
-        el.textContent = showing ? el.dataset.full : el.dataset.mask;
-      });
-      const btn = document.getElementById("toggleSensitiveBtn");
-      if(btn){
-        btn.textContent = showing
-          ? "Ẩn thông tin hộ chiếu/visa"
-          : "Hiện thông tin hộ chiếu/visa";
-      }
-    }
-
-    function printArrivalCards(){
-      const wasShowing = document.body.classList.contains("show-sensitive");
-      document.body.classList.add("show-sensitive");
-      document.querySelectorAll(".sensitive-value").forEach(el => {
-        el.textContent = el.dataset.full;
-      });
-      document.body.classList.add("print-arrival");
-      setTimeout(() => {
-        window.print();
-        document.body.classList.remove("print-arrival");
-        if(!wasShowing){
-          document.body.classList.remove("show-sensitive");
-          document.querySelectorAll(".sensitive-value").forEach(el => {
-            el.textContent = el.dataset.mask;
-          });
-        }
-      }, 150);
-    }
+<button aria-label="Lên đầu trang" id="floatingToTop" onclick="scrollToTop()">↑</button><script>
+const key='beijing-gubei-2026-public-masked-v14-final';
+const editable=document.getElementById('editable');
+function toggleEdit(){
+  if(!editable){return;}
+  const on=editable.getAttribute('contenteditable')==='true';
+  editable.setAttribute('contenteditable',on?'false':'true');
+  document.body.classList.toggle('editing',!on);
+  if(!on) editable.focus();
+}
+function saveDraft(){
+  if(!editable){return;}
+  localStorage.setItem(key,editable.innerHTML);
+  alert('Đã lưu bản nháp trên trình duyệt này.');
+}
+function loadDraft(){
+  if(!editable){return;}
+  const saved=localStorage.getItem(key);
+  if(!saved){alert('Chưa có bản nháp.');return;}
+  if(confirm('Mở bản nháp và thay nội dung hiện tại?')) editable.innerHTML=saved;
+}
+function downloadHtml(){
+  const clone=document.documentElement.cloneNode(true);
+  const cloneEditable=clone.querySelector('#editable');
+  if(cloneEditable) cloneEditable.setAttribute('contenteditable','false');
+  const cloneBody=clone.querySelector('body');
+  if(cloneBody) cloneBody.classList.remove('editing');
+  const blob=new Blob(['<!doctype html>\n'+clone.outerHTML],{type:'text/html;charset=utf-8'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='beijing_trip_2026_final_v14.html';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+function toggleSensitive(){
+  alert('Bản public đã che dữ liệu nhạy cảm. Hãy dùng bản full offline nếu cần xem số hộ chiếu/visa đầy đủ.');
+}
+function printArrivalCards(){
+  document.body.classList.add('print-arrival');
+  setTimeout(()=>{
+    window.print();
+    document.body.classList.remove('print-arrival');
+  },150);
+}
+function scrollToTop(){window.scrollTo({top:0,behavior:'smooth'});}
+function toggleTheme(){
+  document.body.classList.toggle('dark');
+  localStorage.setItem('beijing-trip-theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+}
+function exportExpensesExcel(){
+  const table=document.getElementById('expenseTable');
+  if(!table){alert('Không tìm thấy bảng chi phí.');return;}
+  const html='<!doctype html><html><head><meta charset="utf-8"></head><body><table border="1">'+table.innerHTML+'</table></body></html>';
+  const blob=new Blob([html],{type:'application/vnd.ms-excel;charset=utf-8'});
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(blob);
+  a.download='Beijing_Trip_2026_Chi_phi.xls';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+}
+(function(){
+  const onScroll=()=>document.body.classList.toggle('scrolled', window.scrollY>450);
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  if(localStorage.getItem('beijing-trip-theme')==='dark') document.body.classList.add('dark');
+})();
 </script>
 </body></html>
